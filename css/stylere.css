@@ -1,0 +1,240 @@
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2 {
+    color: #17a2b8;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Make headings slightly smaller */
+h2 {
+    font-size: 1.4em;
+    margin-top: 30px;
+}
+h3 {
+    font-size: 1.2em;
+}
+h4 {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    color: 17a2b8 ;
+}
+
+
+#schedule-form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Style Flatpickr input like others */
+.form-group input[type="date"],
+.form-group input.flatpickr-input, /* Target Flatpickr's visible input */
+.form-group input[type="time"],
+.form-group input[type="text"],
+.form-group select[multiple] { 
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+    background-color: #fff; 
+    margin-bottom: 10px; 
+}
+
+/* Specific style for the select multiple */
+.form-group select[multiple] {
+    min-height: 100px; 
+}
+
+/* Ensure Flatpickr input is visible */
+input#date.flatpickr-input {
+    cursor: pointer;
+}
+
+
+.time-group {
+    display: flex;
+    gap: 20px; 
+}
+
+.time-group > div {
+    flex: 1; 
+}
+
+/* New styles for the service select group */
+.service-select-group label[for="services-select"] {
+    display: none;
+}
+
+/* Styles for the wrapper of the 'other' text input */
+.other-service-input-wrapper label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: normal; 
+    color: #7AB730;
+    font-size: 0.9em;
+}
+
+.other-service-input-wrapper input[type="text"] {
+     width: 100%; 
+     padding: 8px; 
+}
+
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #7AB730;;
+}
+
+#output {
+    background: #e9ecef;
+    padding: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    margin-top: 20px;
+    white-space: pre-wrap; 
+    word-wrap: break-word; 
+    max-width: 600px;
+    margin: 20px auto;
+    min-height: 50px; 
+    font-family: monospace;
+}
+
+.data-display {
+    background: #fff;
+    padding: 10px 20px 20px 20px; 
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Styling for individual entries within the list */
+.data-entry {
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+    margin-bottom: 15px;
+    position: relative; 
+}
+.data-entry:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.data-display h3 { 
+    margin-top: 0;
+    color: #eee;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    text-align: left; 
+}
+
+.data-display p,
+.data-display li { 
+    margin: 3px 0;
+    color: #555;
+}
+
+.data-display strong {
+    color: #333;
+    margin-right: 5px;
+    font-weight: bold; 
+}
+
+.data-display ul {
+    list-style: none; 
+    margin-left: 0;
+    padding-left: 0;
+    margin-bottom: 10px; 
+}
+.data-display ul ul { 
+     list-style: disc;
+     margin-left: 25px;
+     padding-left: 0;
+     margin-top: 5px;
+}
+
+.data-display ul ul li {
+    font-size: 0.95em;
+    margin-bottom: 2px;
+}
+
+/* --- Delete Button Style --- */
+.delete-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.2s ease;
+    margin-top: 10px; 
+    float: right; 
+    clear: both; 
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
+
+/* Clear float after entry content */
+.data-entry::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.logo-footer{
+    width: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top:auto;
+}
+
+.logo-footer img {
+    display: flex;
+    border-radius: 100%;
+    Align-items: center;
+    justify-content: space-between;
+    margin: 5PX;
+}
+
