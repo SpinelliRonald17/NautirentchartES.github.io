@@ -614,7 +614,9 @@ pre code {
 @media (min-width: 576px) {
   .container, .container-sm {
     max-width: 540px;
+
   }
+ 
 }
 
 @media (min-width: 768px) {
@@ -2597,7 +2599,7 @@ fieldset:disabled a.btn {
 .btn-light {
   color: #212529;
   background-color: #FFFFFF;
-  border-color: #FFFFFF;
+  border-color: #FFFFFF;  
 }
 
 .btn-light:hover {
@@ -2999,6 +3001,7 @@ input[type="button"].btn-block {
   height: 0;
   overflow: hidden;
   transition: height 0.35s ease;
+   
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -4021,6 +4024,7 @@ input[type="button"].btn-block {
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 1rem;
+
 }
 
 .navbar .container,
@@ -4074,7 +4078,6 @@ input[type="button"].btn-block {
   flex-basis: 100%;
   flex-grow: 1;
   align-items: center;
-  
 }
 
 .navbar-toggler {
@@ -4083,7 +4086,6 @@ input[type="button"].btn-block {
   line-height: 1;
   background-color: transparent;
   border: 1px solid transparent;
-  
 }
 
 .navbar-toggler:hover, .navbar-toggler:focus {
@@ -4116,6 +4118,7 @@ input[type="button"].btn-block {
   .navbar-expand-sm > .container-fluid, .navbar-expand-sm > .container-sm, .navbar-expand-sm > .container-md, .navbar-expand-sm > .container-lg, .navbar-expand-sm > .container-xl {
     padding-right: 0;
     padding-left: 0;
+    
   }
 }
 
