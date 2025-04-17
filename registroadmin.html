@@ -24,17 +24,17 @@
     <link rel="stylesheet" href="css/stylere.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body style="background-image:url(img/carousel-1.jpg) ;">
     <!-- Topbar Start -->
     <div class="container-fluid bg-light pt-3 d-none d-lg-block">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
-                    <div class="d-inline-flex align-items-center">
-                        <p><i class="fa fa-envelope mr-2"></i>crservices.soporte@gmail.com</p>
+                    <div class="d-inline-flex align-items-center text-white">
+                        <p><i class="fa fa-envelope mr-2"></i>Nautirentbalear@gmail.com</p>
                         <p class="text-body px-3">|</p>
                         <p><i class="fa fa-phone-alt mr-2"></i>+34 662 352 676</p>
-                    </div>
+                    </div> 
                 </div>
                 <div class="col-lg-6 text-center text-lg-right">
                     <div class="d-inline-flex align-items-center">
@@ -47,12 +47,12 @@
                         <!-- <a class="text-info px-3" href="">
                             <i class="fab fa-linkedin-in"></i>
                         </a>-->
-                        <a class="text-info px-3" href="">
+                        <a class="text-white px-3" href="">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <!-- <a class="text-info pl-3" href="">
+                         <a class="text-white pl-3" href="">
                             <i class="fab fa-youtube"></i>
-                        </a>-->
+                        </a>
                     </div>
                 </div>
             </div>
@@ -65,11 +65,12 @@
         <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
             <nav class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5">
                 <a href="index.html" class="navbar-brand">                                     
-                        <img class="logo-footer" src="img/icon/logo2.jpg" alt="">                                                                  
+                        <!--<img class="logo-footer" src="img/icon/logo2.jpg" alt="">     -->                                                             
                 </a>
                 <h1 class="m-0 text-info"><span class="text-dark">Nauti</span>Rent</h1>   
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
+                    <a href="index.html" class="nav-item nav-link text-white">Inicio</a>
+                       
                 </button>
                 <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
                     <div class="navbar-nav ml-auto py-0">
@@ -82,21 +83,13 @@
     </div>
     <!-- Navbar End -->
 
-    <!-- Header Start -->
-    <div class="container-fluid page-header">
-        <div class="container">
-            <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
-                <h3 class="display-4 text-white text-uppercase">Registro de Disponibilidad</h3>
-               
-            </div>
-        </div>
-    </div>
-    <!-- Header End -->
 
 
     <!--<h1 class="m-0 text-info">Registro de Disponibilidad</h1>-->
     <form id="schedule-form">
+        <h5 class="display-4 text-info text-uppercase">Registro de Disponibilidad</h5>
         <div class="form-group">
+           
             <label for="date">Fecha:</label>
             <!-- Keep input type="date" for semantics, Flatpickr will enhance it -->
             <input type="date" id="date" name="date" required placeholder="Seleccione una fecha">
@@ -139,30 +132,72 @@
     </div>
 
 
-     <!-- Footer Start -->
+      <!-- Footer Start -->
      <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
         <div class="row pt-5">
             <div class="col-lg-3 col-md-6 mb-5">
                 <a href="" class="navbar-brand">
-
                     <div class="logo-footer">         
-                        <img src="img/icon/logo1.jpg" alt="">       
+                        <img src="img/icon/logo1.jpg" alt="logo">       
                     </div>
-    
                 </a>
-                <p>Sed ipsum clita tempor ipsum ipsum amet sit ipsum lorem amet labore rebum lorem ipsum dolor. No sed vero lorem dolor dolor</p>
+                <p>Con base en el Club Náutico Santa Ponça, ponemos a tu disposición nuestra embarcación Bayliner VR5, ideal para disfrutar del mar con comodidad, seguridad y estilo.
+                </p>
                 <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Síganos</h6>
                 <div class="d-flex justify-content-start">
-                   <!--  <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>-->
-                    <a class="btn btn-outline-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-outline-primary btn-square" href="https://www.instagram.com/nautirentcharters?igsh=aGV0MXc5aDFzZG5r "><i class="fab fa-instagram"></i></a>                
+                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-youtube"></i></a>
+                  
                 </div>
+            </div>
+           <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Información & Ayuda</h5>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-white-50 mb-2" href="contact.html"><i class="fa fa-angle-right mr-2"></i>Contacto</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Términos y Condiciones</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Quienes Somos</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Flota</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Travelog</a>
+              
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Blog & Noticias</h5>
+                <div class="d-flex flex-column justify-content-start">      
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Noticias</a>
+                    <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Blog</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Dirección</h5>
+                <p><i class="fa fa-map-marker-alt mr-2"></i>Club Nautico Santa Ponça Via de la Creu, 46, 07180 Santa Ponça, Balearic Islands</p>
+                <p><i class="fa fa-phone-alt mr-2"></i>+34 662 352 676</p>
+                <p><i class="fa fa-envelope mr-2"></i>Nautirentbalear@gmail.com</p>
+               
+                <div class="w-100">
+                    <div class="input-group">
+                       <!--<div class="footer">         
+                            <img src="img/icon/qr_nauti.jpg" alt="logoqr"  href="https://www.instagram.com/nautirentcharters?utm_source=qr&igsh=aGV0MXc5aDFzZG5r">       
+                        </div>--> 
+                    </div>
+                </div>
+            </div>
+
+             <!--container-redes-sociales-->
+        <div class="container-redes" id="redes">
+            <a href="https://api.whatsapp.com/send?phone=34662352676&text=¿Cómo son los servicios que ofreces?" target="_blank">
+                <img src="img/icon/icon-whatsapp.png" title="Enviar mensaje de WhatsApp" alt=""> 
+            </a>
+            <!-- <a href="http://m.me/ronald.spinelli.17" target="_blank">
+              <img src="img/icon/icon-messenger.png" alt="" title="Enviar mensaje por Messenger">
+            </a> -->
         </div>
 
-            <div class="col-lg-3 col-md-6 mb-5">
-                
+            <div class="ubicacion">
+                    
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6156.216976912184!2d2.463689057475657!3d39.5120410792677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x129789cf65718de9%3A0x7cdb2506b307f6de!2sClub%20Nautico%20Santa%20Pon%C3%A7a!5e0!3m2!1ses!2ses!4v1744240499169!5m2!1ses!2ses" width="2000" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
+
 
         </div>
     </div>

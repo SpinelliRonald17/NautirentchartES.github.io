@@ -33,10 +33,10 @@
             <div class="row">
                 <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
                     <div class="d-inline-flex align-items-center">
-                        <p><i class="fa fa-envelope mr-2"></i>crservices.soporte@gmail.com</p>
+                        <p><i class="fa fa-envelope mr-2"></i>Nautirentbalear@gmail.com</p>
                         <p class="text-body px-3">|</p>
                         <p><i class="fa fa-phone-alt mr-2"></i>+34 662 352 676</p>
-                    </div>   
+                    </div>  
                 </div>
                 <div class="col-lg-6 text-center text-lg-right">
                     <div class="d-inline-flex align-items-center">
@@ -52,9 +52,9 @@
                         <a class="text-info px-3" href="">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <!-- <a class="text-info px-3" href="">
+                        <a class="text-info px-3" href="">
                             <i class="fab fa-youtube"></i>
-                        </a>-->
+                        </a>
                     </div>
                 </div>
             </div>
@@ -63,43 +63,153 @@
     <!-- Topbar End -->
 
 
-    <!-- Navbar Start -->
-    <div class="container-fluid position-relative nav-bar p-0">
-        <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
-            <nav class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5">
-                <a href="" class="navbar-brand">
-                       <!-- languages -->
-                       <div id="flags" clase="flags">                           
-                        <div class="flags_item " data-language=""="es">
-                             <img class="flags_img" src="img/icon/es.jpg" alt="">
-                        </div>                 
-                        <div class="flags_item" data-language="en">
-                             <img class="flags_img" src="img/icon/gb.jpg" alt="">
-                         </div>
-                   </div>
-                </a>
-                <h1 class="m-0 text-info"><span class="text-dark">Nauti</span>Rent</h1>                 
-                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                     <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
-                        <div class="navbar-nav ml-auto py-0">
-                            <a href="index.html" class="nav-item nav-link">Inicio</a>
-                            <a href="" class="nav-item nav-link">Acerca de</a>                        
-                                </div>
-                                <a href="contact.html" class="nav-item nav-link">Contacto</a>
+
+   <!-- Navbar Start -->
+   <div class="container-fluid position-relative nav-bar p-0">
+    <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
+        <nav class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5">
+            <a href="" class="navbar-brand">
+                   <!-- languages -->
+                   <div id="flags" clase="flags">                           
+                    <div class="flags_item " data-language=""="es">
+                         <img class="flags_img" src="img/icon/es.jpg" alt="">
+                    </div>                 
+                    <div class="flags_item" data-language="en">
+                         <img class="flags_img" src="img/icon/gb.jpg" alt="">
+                     </div>
+               </div>
+            </a>
+            <h1 class="m-0 text-info"><span class="text-dark">Nauti</span>Rent</h1>                 
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                 <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto py-0">
+                        <a href="index.html" class="nav-item nav-link">Inicio</a>
+                                               
                             </div>
-                       
+                            <a href="contact.html" class="nav-item nav-link">Contacto</a>
+                            <a href="registroadmin.html" class="nav-item nav-link">🗝️</a>
+                        </div>
+                   
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<!-- Navbar End -->
+
+
+ <!-- Registration Start -->
+     <div class="container-fluid bg-registration py-5" style="margin: 90px 0;">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-7 mb-5 mb-lg-0">
+                    <div class="mb-4">
+                        <h1 class="text-white text-uppercase" style="letter-spacing: 5px;">Contacta con Nosotros</h1>                    
+                    </div>
+                    <ul class="list-inline text-white m-0">
+                        <p><i class="fa fa-map-marker-alt mr-2"></i>Club Nautico Santa Ponça Via de la Creu, 46, 07180 Santa Ponça, Balearic Islands</p>
+                            <p><i class="fa fa-envelope mr-2"></i>crservices.soporte@gmail.com</p>  
+                            <p><i class="fa fa-phone-alt mr-2"></i>+34 662 352 676</p>
+                    </ul>
+                </div>
+                <div class="col-lg-5">
+                    <div class="card border-0">
+                        <div class="card-header bg-primary text-center p-4">
+                            <h1 class="text-white m-0">Formulario de Contacto</h1>
+                        </div>
+                        <div class="card-body rounded-bottom bg-white p-5">
+                            <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                                <div class="form-row">
+                                    <div class="control-group col-sm-6">
+                                        <input type="text" class="form-control p-4" id="name" placeholder="Su Nombre"
+                                            required="required" data-validation-required-message="Por favor ingrese su nombre" />
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="control-group col-sm-6">
+                                        <input type="email" class="form-control p-4" id="email" placeholder="Su Email"
+                                            required="required" data-validation-required-message="Por favor ingrese email" />
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <input type="tel" class="form-control p-4" id="tele" placeholder="Teléfono"
+                                        required="required" data-validation-required-message="Por favor ingrese Teléfono" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group">
+                                    <input type="text" class="form-control p-4" id="subject" placeholder="Asunto"
+                                        required="required" data-validation-required-message="Por favor ingrese asunto" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group">
+                                    <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Mensaje"
+                                        required="required"
+                                        data-validation-required-message="Por favor ingrese su mensaje"></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="text-center">
+                                    <button class="btn btn-primary py-3 px-4" type="submit" id="sendMessageButton">Enviar</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
-            </nav>
+            </div>
         </div>
     </div>
-    <!-- Navbar End -->
+    <!-- Registration End -->
+
+<!-- Contact Start -->
+<!--<div class="container-fluid py-5">
+    <div class="container py-5">
+        <div class="text-center mb-3 pb-3">
+            <h6 class="text-info text-uppercase" style="letter-spacing: 5px;">Contacto</h6>
+            <h1 class="text-info">Contacto Para Cualquier Consulta</h1>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="contact-form bg-white" style="padding: 30px;">
+                    <div id="success"></div>
+                    <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                        <div class="form-row">
+                            <div class="control-group col-sm-6">
+                                <input type="text" class="form-control p-4" id="name" placeholder="Su Nombre"
+                                    required="required" data-validation-required-message="Por favor ingrese su nombre" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group col-sm-6">
+                                <input type="email" class="form-control p-4" id="email" placeholder="Su Email"
+                                    required="required" data-validation-required-message="Por favor ingrese email" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <input type="text" class="form-control p-4" id="subject" placeholder="Asunto"
+                                required="required" data-validation-required-message="Por favor ingrese asunto" />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="control-group">
+                            <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Mensaje"
+                                required="required"
+                                data-validation-required-message="Por favor ingrese su mensaje"></textarea>
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-primary py-3 px-4" type="submit" id="sendMessageButton">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>-->
+<!-- Contact End -->
 
 
     <!-- Header Start -->
-    <div class="container-fluid page-header">
+    <!--<div class="container-fluid page-header">
         <div class="container">
             <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
                 <h3 class="display-4 text-white text-uppercase">Contacto</h3>
@@ -110,7 +220,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Header End -->
 
 
@@ -257,51 +367,7 @@
 <!-- Booking End -->
 
 
-    <!-- Contact Start -->
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="text-center mb-3 pb-3">
-                <h6 class="text-info text-uppercase" style="letter-spacing: 5px;">Contacto</h6>
-                <h1>Contacto Para Cualquier Consulta</h1>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="contact-form bg-white" style="padding: 30px;">
-                        <div id="success"></div>
-                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                            <div class="form-row">
-                                <div class="control-group col-sm-6">
-                                    <input type="text" class="form-control p-4" id="name" placeholder="Su Nombre"
-                                        required="required" data-validation-required-message="Por favor ingrese su nombre" />
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="control-group col-sm-6">
-                                    <input type="email" class="form-control p-4" id="email" placeholder="Su Email"
-                                        required="required" data-validation-required-message="Por favor ingrese email" />
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <input type="text" class="form-control p-4" id="subject" placeholder="Asunto"
-                                    required="required" data-validation-required-message="Por favor ingrese asunto" />
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="control-group">
-                                <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Mensaje"
-                                    required="required"
-                                    data-validation-required-message="Por favor ingrese su mensaje"></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="text-center">
-                                <button class="btn btn-primary py-3 px-4" type="submit" id="sendMessageButton">Enviar</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Contact End -->
+    
 
 
     <!-- Footer Start -->
@@ -310,57 +376,50 @@
             <div class="col-lg-3 col-md-6 mb-5">
                 <a href="" class="navbar-brand">
                     <div class="logo-footer">         
-                        <img src="img/icon/logo1.jpg" alt="">       
+                        <img src="img/icon/logo1.jpg" alt="logo">       
                     </div>
                 </a>
-                <p>Sed ipsum clita tempor ipsum ipsum amet sit ipsum lorem amet labore rebum lorem ipsum dolor. No sed vero lorem dolor dolor</p>
+                <p>Con base en el Club Náutico Santa Ponça, ponemos a tu disposición nuestra embarcación Bayliner VR5, ideal para disfrutar del mar con comodidad, seguridad y estilo.
+                </p>
                 <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Síganos</h6>
                 <div class="d-flex justify-content-start">
-                   <!--  <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>-->
-                    <a class="btn btn-outline-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-outline-primary btn-square" href="https://www.instagram.com/nautirentcharters?igsh=aGV0MXc5aDFzZG5r "><i class="fab fa-instagram"></i></a>                
+                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-youtube"></i></a>
+                  
                 </div>
             </div>
-           <!-- <div class="col-lg-3 col-md-6 mb-5">
-                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Our Services</h5>
+           <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Información & Ayuda</h5>
                 <div class="d-flex flex-column justify-content-start">
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Destination</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Services</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Packages</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Guides</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Testimonial</a>
+                    <a class="text-white-50 mb-2" href="contact.html"><i class="fa fa-angle-right mr-2"></i>Contacto</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Términos y Condiciones</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Quienes Somos</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Flota</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Travelog</a>
+              
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Blog & Noticias</h5>
+                <div class="d-flex flex-column justify-content-start">      
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Noticias</a>
                     <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Blog</a>
                 </div>
-            </div>-->
-           <!-- <div class="col-lg-3 col-md-6 mb-5">
-                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Usefull Links</h5>
-                <div class="d-flex flex-column justify-content-start">
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Destination</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Services</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Packages</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Guides</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Testimonial</a>
-                    <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Blog</a>
-                </div>
-            </div>-->
-            <!--<div class="col-lg-3 col-md-6 mb-5">
-                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Contact Us</h5>
-                <p><i class="fa fa-map-marker-alt mr-2"></i>123 Street, New York, USA</p>
-                <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
-                <p><i class="fa fa-envelope mr-2"></i>info@example.com</p>
-                <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Newsletter</h6>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Dirección</h5>
+                <p><i class="fa fa-map-marker-alt mr-2"></i>Club Nautico Santa Ponça Via de la Creu, 46, 07180 Santa Ponça, Balearic Islands</p>
+                <p><i class="fa fa-phone-alt mr-2"></i>+34 662 352 676</p>
+                <p><i class="fa fa-envelope mr-2"></i>Nautirentbalear@gmail.com</p>
+               
                 <div class="w-100">
                     <div class="input-group">
-                        <input type="text" class="form-control border-light" style="padding: 25px;" placeholder="Your Email">
-                        <div class="input-group-append">
-                            <button class="btn btn-primary px-3">Sign Up</button>
-                        </div>
+                       <!--<div class="footer">         
+                            <img src="img/icon/qr_nauti.jpg" alt="logoqr"  href="https://www.instagram.com/nautirentcharters?utm_source=qr&igsh=aGV0MXc5aDFzZG5r">       
+                        </div>--> 
                     </div>
                 </div>
-            </div>-->
+            </div>
 
              <!--container-redes-sociales-->
         <div class="container-redes" id="redes">
