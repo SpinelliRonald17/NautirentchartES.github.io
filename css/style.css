@@ -270,6 +270,7 @@ button,
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button;
+  appearance: none;
 }
 
 button:not(:disabled),
@@ -335,6 +336,7 @@ progress {
 [type="search"] {
   outline-offset: -2px;
   -webkit-appearance: none;
+  appearance: none;
 }
 
 [type="search"]::-webkit-search-decoration {
@@ -3494,7 +3496,9 @@ input[type="button"].btn-block {
   display: block;
   min-height: 1.5rem;
   padding-left: 1.5rem;
-  color-adjust: exact;
+  /*color-adjust: exact;*/
+  -webkit-print-color-adjust: unset;
+  print-color-adjust: unset;
 }
 
 .custom-control-inline {
@@ -4047,6 +4051,7 @@ input[type="button"].btn-block {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+
 }
 
 .navbar-nav .nav-link {
@@ -4069,6 +4074,7 @@ input[type="button"].btn-block {
   flex-basis: 100%;
   flex-grow: 1;
   align-items: center;
+  
 }
 
 .navbar-toggler {
@@ -4077,6 +4083,7 @@ input[type="button"].btn-block {
   line-height: 1;
   background-color: transparent;
   border: 1px solid transparent;
+  
 }
 
 .navbar-toggler:hover, .navbar-toggler:focus {
@@ -4091,6 +4098,17 @@ input[type="button"].btn-block {
   content: "";
   background: no-repeat center center;
   background-size: 100% 100%;
+ 
+}
+
+.navbar-brand img {
+  display: flex;
+  vertical-align: middle;
+  content: "";
+  background: no-repeat center center;
+  background-size: 100% 100%;
+  margin: center;
+
 }
 
 @media (max-width: 575.98px) {
@@ -4309,6 +4327,7 @@ input[type="button"].btn-block {
 
 .navbar-light .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  
 }
 
 .navbar-light .navbar-text {
@@ -6165,7 +6184,8 @@ button.bg-danger:focus {
 }
 
 .bg-light {
-  background-color: #FFFFFF !important;
+  backdrop-filter: blur(15px);
+  /*background-color: #FFFFFF !important;*/
 }
 
 a.bg-light:hover, a.bg-light:focus,
@@ -7457,7 +7477,7 @@ button.bg-dark:focus {
 
 .mt-5,
 .my-5 {
-  margin-top: 3rem !important;
+  margin-top: 2rem !important;
 }
 
 .mr-5,
@@ -9185,8 +9205,12 @@ button.bg-dark:focus {
   text-align: right !important;
 }
 
+.text-lefts {
+  text-align: left!important;
+}
+
 .text-center {
-  text-align: center !important;
+  text-align: center!important;
 }
 
 @media (min-width: 576px) {
@@ -9584,7 +9608,7 @@ h6,
 }
 
 .page-header {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/carousel-2.jpg), no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/carousel-1.jpg), no-repeat center center;
   background-size: cover;
 }
 
@@ -9656,7 +9680,7 @@ h6,
 }
 
 .bg-registration {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/destination-6.jpg), no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/carousel-1.jpg), no-repeat center center;
   background-size: cover;
   /*  fondo mega oferta*/
 }
@@ -9746,7 +9770,7 @@ h6,
 }
 
 .testimonial-carousel .owl-item.center .testimonial-text {
-  box-shadow: 0 0 30px #CCCCCC;
+  box-shadow: 0 0 25px #CCCCCC;
 }
 
 .blog-item {
@@ -9833,11 +9857,16 @@ h6,
 
 .flags{
   width: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
 }
 
-.flags_item{
+.flags .flags_item{
   width: 25px;
   margin-left: 10px;
+
 }
 
 .flags_item:hover{
@@ -9845,7 +9874,25 @@ background-color:  #17a2b8;
 }
 
 .flags_img {
-width: 25px;
+ width: 25px;
  cursor: pointer;
  margin-top: auto;
+ margin: 5px;
+
+}
+
+.logo-footer{
+  width: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top:auto;
+}
+
+.logo-footer img {
+  display: flex;
+  border-radius: 100%;
+  Align-items: center;
+  justify-content: space-between;
+  margin: 5px;
 }
