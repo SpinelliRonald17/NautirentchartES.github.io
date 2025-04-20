@@ -24,90 +24,101 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/stylesin.css" rel="stylesheet">
 </head>
 
-<body>
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-light pt-3 d-none d-lg-block">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
-                    <div class="d-inline-flex align-items-center">
-                        <p><i class="fa fa-envelope mr-2"></i>Nautirentbalear@gmail.com</p>
-                        <p class="text-body px-3">|</p>
-                        <p><i class="fa fa-phone-alt mr-2"></i>+34 662 352 676</p>
-                    </div>   
-                </div>
-                <div class="col-lg-6 text-center text-lg-right">
-                    <div class="d-inline-flex align-items-center">
-                       <!--  <a class="text-info px-3" href="">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>-->
-                        <!-- <a class="text-info px-3" href="">
-                            <i class="fab fa-twitter"></i>
-                        </a>-->
-                        <!-- <a class="text-info px-3" href="">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>-->
-                        <a class="text-info px-3" href="">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a class="text-info px-3" href="">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
+<body data-spy="scroll" data-target=".fixed-top">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
+    <!-- Text Logo - Use this if you don't have a graphic logo -->
+    <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Aria</a> -->
+
+    <div id="flags" clase="flags">                           
+        <div class="flags_item " data-language=""="es">
+            <img class="flags_img" src="img/icon/es.jpg" alt="">
+        </div>                 
+        <div class="flags_item" data-language="en">
+            <img class="flags_img" src="img/icon/gb.jpg" alt="">
         </div>
     </div>
-    <!-- Topbar End -->
+    <!-- Image Logo -->
+     <!-- <a class="navbar-brand logo-image" href="index.html"><img src="" alt="alternative"></a>-->
+     <a class="navbar-brand logo-image" href="index.html"><h1 class="m-0 text-white"><span class="text-white">Nauti</span>Rent</h1></a></a>
+     
+    
+    <!-- Mobile Menu Toggle Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-awesome fas fa-bars"></span>
+        <span class="navbar-toggler-awesome fas fa-times"></span>
+    </button>
+    <!-- end of mobile menu toggle button -->
 
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link page-scroll" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link page-scroll" href="contact.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link page-scroll" href="registroadmin.html">Admin</a>
+            </li>
+            <!--<li class="nav-item">
+                <a class="nav-link page-scroll" href="#callMe">CALL ME</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link page-scroll" href="#projects">PROJECTS</a>
+            </li>-->
 
-       <!-- Navbar Start -->
-       <div class="container-fluid position-relative nav-bar p-0">
-        <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
-            <nav class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5">
-                <a href="" class="navbar-brand">
-                       <!-- languages -->
-                       <div id="flags" clase="flags">                           
-                        <div class="flags_item " data-language=""="es">
-                             <img class="flags_img" src="img/icon/es.jpg" alt="">
-                        </div>                 
-                        <div class="flags_item" data-language="en">
-                             <img class="flags_img" src="img/icon/gb.jpg" alt="">
-                         </div>
-                   </div>
+            <!-- Dropdown Menu -->          
+            <!--<li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle page-scroll" href="#about" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">ABOUT</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="terms-conditions.html"><span class="item-text">TERMS CONDITIONS</span></a>
+                    <div class="dropdown-items-divide-hr"></div>
+                    <a class="dropdown-item" href="privacy-policy.html"><span class="item-text">PRIVACY POLICY</span></a>
+                </div>
+            </li>-->
+            <!-- end of dropdown menu -->
+
+            <!-- <li class="nav-item">
+                <a class="nav-link page-scroll" href="#contact">CONTACT</a>
+            </li>-->
+        </ul>
+        <span class="nav-item social-icons">
+            <span class="fa-stack">
+                <a href="#your-link">
+                    <span class="hexagon"></span>
+                    <i class="fab fa-instagram fa-stack-1x"></i>
                 </a>
-                <h1 class="m-0 text-info"><span class="text-dark">Nauti</span>Rent</h1>                 
-                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                     <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
-                        <div class="navbar-nav ml-auto py-0">
-                            <a href="index.html" class="nav-item nav-link">Inicio</a>
-                                                   
-                                </div>
-                                <a href="contact.html" class="nav-item nav-link">Contacto</a>
-                                <a href="registroadmin.html" class="nav-item nav-link">🗝️</a>
-                            </div>
-                       
-                    </div>
-                </div>
-            </nav>
-        </div>
+            </span>
+            <span class="fa-stack">
+                <a href="#your-link">
+                    <span class="hexagon"></span>
+                    <i class="fab fa-youtube fa-stack-1x"></i>
+                </a>
+            </span>
+        </span>
     </div>
-    <!-- Navbar End -->
-
+</nav> <!-- end of navbar -->
+<!-- end of navbar -->
 
     <!-- Carousel Start -->
     <div class="container-fluid p-0">
+      
+
+        
         <div id="header-carousel" class="carousel slide" data-ride="carousel">
+  
             <div class="carousel-inner">
+                
                 <div class="carousel-item active">
                     <img class="w-100" src="img/carousel-1.jpg" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
-                            <!--<h4 class="text-white text-uppercase mb-md-3">Tours & Travel</h4>-->
+                             
                             <h1 class="display-3 text-white mb-md-4">Descubramos la isla juntos</h1>
                             <a href="contact.html" class="btn btn-primary py-md-3 px-md-5 mt-2">Reserva Ahora</a>
                         </div>

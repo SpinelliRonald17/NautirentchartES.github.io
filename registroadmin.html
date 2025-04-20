@@ -1,4 +1,6 @@
-<html lang="es">
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="utf-8">
     <title>Nautirent</title>
@@ -6,8 +8,8 @@
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+   <!-- Favicon -->
+   <link href="img/icon/logo1.jpg" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -19,22 +21,24 @@
     <!-- Libraries Stylesheet -->
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
-    <!-- Add Flatpickr CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-    <link rel="stylesheet" href="css/stylere.css">
-    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/stylere.css" rel="stylesheet">
 </head>
-<body style="background-image:url(img/carousel-1.jpg) ;">
+
+<body>
+    
     <!-- Topbar Start -->
     <div class="container-fluid bg-light pt-3 d-none d-lg-block">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
-                    <div class="d-inline-flex align-items-center text-white">
+                    <div class="d-inline-flex align-items-center">
                         <p><i class="fa fa-envelope mr-2"></i>Nautirentbalear@gmail.com</p>
                         <p class="text-body px-3">|</p>
                         <p><i class="fa fa-phone-alt mr-2"></i>+34 662 352 676</p>
-                    </div> 
+                    </div>  
                 </div>
                 <div class="col-lg-6 text-center text-lg-right">
                     <div class="d-inline-flex align-items-center">
@@ -47,10 +51,10 @@
                         <!-- <a class="text-info px-3" href="">
                             <i class="fab fa-linkedin-in"></i>
                         </a>-->
-                        <a class="text-white px-3" href="">
+                        <a class="text-info px-3" href="">
                             <i class="fab fa-instagram"></i>
                         </a>
-                         <a class="text-white pl-3" href="">
+                        <a class="text-info px-3" href="">
                             <i class="fab fa-youtube"></i>
                         </a>
                     </div>
@@ -60,80 +64,307 @@
     </div>
     <!-- Topbar End -->
 
-       <!-- Navbar Start -->
-    <div class="container-fluid position-relative nav-bar p-0">
-        <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
-            <nav class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5">
-                <a href="index.html" class="navbar-brand">                                     
-                        <!--<img class="logo-footer" src="img/icon/logo2.jpg" alt="">     -->                                                             
-                </a>
-                <h1 class="m-0 text-info"><span class="text-dark">Nauti</span>Rent</h1>   
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                    <a href="index.html" class="nav-item nav-link text-white">Inicio</a>
-                       
-                </button>
-                <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
-                    <div class="navbar-nav ml-auto py-0">
-                        <a href="index.html" class="nav-item nav-link">Inicio</a>                    
-                            </div>                      
+
+
+
+
+ <!-- Registration Start -->
+     <div class="container-fluid bg-registration py-5" style="margin: 0px 0;">
+        <a href="" class="navbar-brand">                   
+            <!-- languages -->
+            <div id="flags" clase="flags">                           
+             <div class="flags_item " data-language=""="es">
+                  <img class="flags_img" src="img/icon/es.jpg" alt="">
+             </div>                 
+             <div class="flags_item" data-language="en">
+                  <img class="flags_img" src="img/icon/gb.jpg" alt="">
+              </div>
+        </div>
+     </a>
+
+        <div class="container-fluid position-relative p-0">
+            
+            <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 1;">        
+                <a href="index.html"><h1 class="m-0 text-info"><span class="text-white">Nauti</span>Rent</h1></a>  
+                   
+           </div>
+       </div>
+        <div class="container py-5">
+            <div class="row align-items-center">
+                
+             
+                <div class="col-lg-7">
+                    <div class="card border-0">
+                        <div class="card-header bg-primary text-center p-4">
+                            <h1 class="text-white m-0">Registro de Disponibilidad</h1>
+                        </div>
+                        <div class="card-body rounded-bottom bg-white p-5">
+                            <form id="schedule-form">
+                                <div class="form-group">   
+                                    <label for="date">Fecha:</label>
+                                    <!-- Keep input type="date" for semantics, Flatpickr will enhance it -->
+                                    <input type="date" id="date" name="date" required placeholder="Seleccione una fecha">
+                                </div>
+                                <div class="form-group time-group">
+                                    <div>
+                                        <label for="start-time">Hora Desde:</label>
+                                        <input type="time" id="start-time" name="start-time" required>
+                                    </div>
+                                    <div>
+                                        <label for="end-time">Hora Hasta:</label>
+                                        <input type="time" id="end-time" name="end-time" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Servicios Disponibles:</label>
+                                    <div class="service-select-group">
+                                        <label for="services-select">Seleccione servicios:</label>
+                                        <select id="services-select" name="services" multiple required>     
+                                            <option value="Consulta General">Samuel 3hs 350€ </option>
+                                            <option value="Limpieza Dental">Dominik 2hs 250€ </option>
+                                            <option value="Revisión">Alejandra 1hs 150€ </option>
+                                            <option value="Otro">Otro (especificar)</option>
+                                        </select>
+                                        <div id="other-service-wrapper" class="other-service-input-wrapper" style="display: none; margin-top: 10px;">
+                                            <label for="service-other">Especificar otro servicio:</label>
+                                            <input type="text" id="service-other" name="service-other" placeholder="Especificar otro servicio">
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="submit">Guardar Datos</button>
+                            </form>
+                  
+                          <!--<h2>Datos Registrados Recientemente</h2>
+                            <pre id="output"></pre>-->
+                                                  
+                            </div>                     
+                        </div>                      
+                    </div>
+
+                    <div class="col-lg-5 mb-5 mb-lg-0">
+                    
+                        <h2 class="m-0 text-white">Todas las Disponibilidades Guardadas</h2>
+                        <div id="data-list" class="data-display">
+                            <!-- Data will be dynamically inserted here -->
+                        </div>
                     </div>
                 </div>
-            </nav>
+            </div>
         </div>
     </div>
-    <!-- Navbar End -->
+    <!-- Registration End -->
 
-
-
-    <!--<h1 class="m-0 text-info">Registro de Disponibilidad</h1>-->
-    <form id="schedule-form">
-        <h5 class="display-4 text-info text-uppercase">Registro de Disponibilidad</h5>
-        <div class="form-group">
-           
-            <label for="date">Fecha:</label>
-            <!-- Keep input type="date" for semantics, Flatpickr will enhance it -->
-            <input type="date" id="date" name="date" required placeholder="Seleccione una fecha">
+<!-- Contact Start -->
+<!--<div class="container-fluid py-5">
+    <div class="container py-5">
+        <div class="text-center mb-3 pb-3">
+            <h6 class="text-info text-uppercase" style="letter-spacing: 5px;">Contacto</h6>
+            <h1 class="text-info">Contacto Para Cualquier Consulta</h1>
         </div>
-        <div class="form-group time-group">
-            <div>
-                <label for="start-time">Hora Desde:</label>
-                <input type="time" id="start-time" name="start-time" required>
-            </div>
-            <div>
-                <label for="end-time">Hora Hasta:</label>
-                <input type="time" id="end-time" name="end-time" required>
-            </div>
-        </div>
-        <div class="form-group">
-            <label>Servicios Disponibles:</label>
-            <div class="service-select-group">
-                <label for="services-select">Seleccione servicios:</label>
-                <select id="services-select" name="services" multiple required>     
-                    <option value="Consulta General">Samuel 3hs 350€ </option>
-                    <option value="Limpieza Dental">Dominik 2hs 250€ </option>
-                    <option value="Revisión">Alejandra 1hs 150€ </option>
-                    <option value="Otro">Otro (especificar)</option>
-                </select>
-                <div id="other-service-wrapper" class="other-service-input-wrapper" style="display: none; margin-top: 10px;">
-                     <label for="service-other">Especificar otro servicio:</label>
-                     <input type="text" id="service-other" name="service-other" placeholder="Especificar otro servicio">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="contact-form bg-white" style="padding: 30px;">
+                    <div id="success"></div>
+                    <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                        <div class="form-row">
+                            <div class="control-group col-sm-6">
+                                <input type="text" class="form-control p-4" id="name" placeholder="Su Nombre"
+                                    required="required" data-validation-required-message="Por favor ingrese su nombre" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group col-sm-6">
+                                <input type="email" class="form-control p-4" id="email" placeholder="Su Email"
+                                    required="required" data-validation-required-message="Por favor ingrese email" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <input type="text" class="form-control p-4" id="subject" placeholder="Asunto"
+                                required="required" data-validation-required-message="Por favor ingrese asunto" />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="control-group">
+                            <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Mensaje"
+                                required="required"
+                                data-validation-required-message="Por favor ingrese su mensaje"></textarea>
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-primary py-3 px-4" type="submit" id="sendMessageButton">Enviar</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
-        <button type="submit">Guardar Datos</button>
-    </form>
-
-    <!--<h2>Datos Registrados Recientemente</h2>
-    <pre id="output"></pre>-->
-
-    <h1 class="m-0 text-white">Lista de Todas las Disponibilidades Guardadas</h2>
-    <div id="data-list" class="data-display">
-        <!-- Data will be dynamically inserted here -->
     </div>
+</div>-->
+<!-- Contact End -->
 
 
-      <!-- Footer Start -->
-     <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
+    <!-- Header Start -->
+    <!--<div class="container-fluid page-header">
+        <div class="container">
+            <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
+                <h3 class="display-4 text-white text-uppercase">Contacto</h3>
+                <div class="d-inline-flex text-white">
+                    <p class="m-0 text-uppercase"><a class="text-white" href="index.html">Inicio</a></p>
+                    <i class="fa fa-angle-double-right pt-1 px-3"></i>
+                    <p class="m-0 text-uppercase text-info">Contacto</p>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Header End -->
+
+
+  <!-- Booking Start -->
+  <!--<div class="container-fluid booking mt-5 pb-5">
+    <div class="container pb-5">
+        <div class="bg-light shadow" style="padding: 30px;">
+            <div class="row align-items-center" style="min-height: 60px;">
+                <div class="col-md-10">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="mb-3 mb-md-0">                                
+                                    <div class="date" id="date1" data-target-input="nearest">
+                                        <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Fecha" data-target="#date1" data-toggle="datetimepicker"/>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="col-md-3">
+                            <select class="custom-select px-4" style="height: 47px;">
+                                <option selected>Desde</option>
+                                <option value="1">0:00</option>
+                                <option value="2">0:30</option>
+                                <option value="4">1:00</option>
+                                <option value="5">1:30</option>
+                                <option value="6">2:00</option>
+                                <option value="7">2:30</option>
+                                <option value="8">3:00</option>
+                                <option value="9">3:30</option>
+                                <option value="10">4:00</option>
+                                <option value="11">4:30</option>
+                                <option value="12">5:00</option>
+                                <option value="13">5:30</option>
+                                <option value="14">6:00</option>
+                                <option value="15">6:30</option>
+                                <option value="16">7:00</option>
+                                <option value="17">7:30</option>
+                                <option value="18">8:00</option>
+                                <option value="19">8:30</option>
+                                <option value="20">9:00</option>
+                                <option value="21">9:30</option>
+                                <option value="22">10:00</option>
+                                <option value="23">10:30</option>
+                                <option value="24">11:00</option>
+                                <option value="25">11:30</option>
+                                <option value="26">12:00</option>
+                                <option value="27">12:30</option>
+                                <option value="28">13:00</option>
+                                <option value="29">13:30</option>
+                                <option value="30">14:00</option>
+                                <option value="31">14:30</option>
+                                <option value="32">15:00</option>
+                                <option value="33">15:30</option>
+                                <option value="34">16:00</option>
+                                <option value="35">16:30</option>
+                                <option value="36">17:00</option>
+                                <option value="37">17:30</option>
+                                <option value="38">18:00</option>
+                                <option value="39">18:30</option>
+                                <option value="40">19:00</option>
+                                <option value="41">19:30</option>
+                                <option value="42">20:00</option>
+                                <option value="43">20:30</option>
+                                <option value="44">21:00</option>
+                                <option value="45">21:30</option>
+                                <option value="46">22:00</option>
+                                <option value="47">22:30</option>
+                                <option value="48">23:00</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                           <div class="mb-3 mb-md-0">
+                            <select class="custom-select px-4" style="height: 47px;">
+                                <option selected>Hasta</option>
+                                <option value="1">0:00</option>
+                                <option value="2">0:30</option>
+                                <option value="4">1:00</option>
+                                <option value="5">1:30</option>
+                                <option value="6">2:00</option>
+                                <option value="7">2:30</option>
+                                <option value="8">3:00</option>
+                                <option value="9">3:30</option>
+                                <option value="10">4:00</option>
+                                <option value="11">4:30</option>
+                                <option value="12">5:00</option>
+                                <option value="13">5:30</option>
+                                <option value="14">6:00</option>
+                                <option value="15">6:30</option>
+                                <option value="16">7:00</option>
+                                <option value="17">7:30</option>
+                                <option value="18">8:00</option>
+                                <option value="19">8:30</option>
+                                <option value="20">9:00</option>
+                                <option value="21">9:30</option>
+                                <option value="22">10:00</option>
+                                <option value="23">10:30</option>
+                                <option value="24">11:00</option>
+                                <option value="25">11:30</option>
+                                <option value="26">12:00</option>
+                                <option value="27">12:30</option>
+                                <option value="28">13:00</option>
+                                <option value="29">13:30</option>
+                                <option value="30">14:00</option>
+                                <option value="31">14:30</option>
+                                <option value="32">15:00</option>
+                                <option value="33">15:30</option>
+                                <option value="34">16:00</option>
+                                <option value="35">16:30</option>
+                                <option value="36">17:00</option>
+                                <option value="37">17:30</option>
+                                <option value="38">18:00</option>
+                                <option value="39">18:30</option>
+                                <option value="40">19:00</option>
+                                <option value="41">19:30</option>
+                                <option value="42">20:00</option>
+                                <option value="43">20:30</option>
+                                <option value="44">21:00</option>
+                                <option value="45">21:30</option>
+                                <option value="46">22:00</option>
+                                <option value="47">22:30</option>
+                                <option value="48">23:00</option>
+                            </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mb-3 mb-md-0">
+                              <select class="custom-select px-4" style="height: 47px;">
+                                    <option selected>Todos</option>
+                                    <option value="1">Samuel 3hs 350€ </option>
+                                    <option value="2">Dominik 2hs 250€ </option>
+                                    <option value="3">Alejandra 1hs 150€ </option>
+                                </select>
+                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-primary btn-block" type="submit" style="height: 47px; margin-top: -2px;">Solicitar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>-->
+<!-- Booking End -->
+
+
+    
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
         <div class="row pt-5">
             <div class="col-lg-3 col-md-6 mb-5">
                 <a href="" class="navbar-brand">
@@ -215,19 +446,26 @@
     </div>
     <!-- Footer End -->
 
-    <!-- Add Flatpickr JS -->
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-    <!-- Optional: Add Spanish locale for Flatpickr -->
-    <script src="https://npmcdn.com/flatpickr/dist/l10n/es.js"></script>
 
-    <script type="importmap">
-      {
-        "imports": {
-          "lodash": "https://cdn.jsdelivr.net/npm/lodash-es@4.17.21/lodash.min.js"
-        }
-      }
-    </script>
-    <script type="module" src="js/scriptre.js"></script>
-    <script type="module" src="js/main.js"></script>
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 </body>
+
 </html>
