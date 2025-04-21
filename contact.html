@@ -8,8 +8,8 @@
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
 
-   <!-- Favicon -->
-   <link href="img/icon/logo1.jpg" rel="icon">
+  <!-- Favicon -->
+  <link href="img/icon/Logoicon.ico" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -23,44 +23,90 @@
     <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
+    <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/stylesin.css" rel="stylesheet">
+   
 </head>
 
-<body>
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-light pt-3 d-none d-lg-block">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
-                    <div class="d-inline-flex align-items-center">
-                        <p><i class="fa fa-envelope mr-2"></i>Nautirentbalear@gmail.com</p>
-                        <p class="text-body px-3">|</p>
-                        <p><i class="fa fa-phone-alt mr-2"></i>+34 662 352 676</p>
-                    </div>  
-                </div>
-                <div class="col-lg-6 text-center text-lg-right">
-                    <div class="d-inline-flex align-items-center">
-                       <!--  <a class="text-info px-3" href="">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>-->
-                        <!-- <a class="text-info px-3" href="">
-                            <i class="fab fa-twitter"></i>
-                        </a>-->
-                        <!-- <a class="text-info px-3" href="">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>-->
-                        <a class="text-info px-3" href="">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a class="text-info px-3" href="">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </div>
-                </div>
+<body data-spy="scroll" data-target=".fixed-top">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
+        <!-- Text Logo - Use this if you don't have a graphic logo -->
+        <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Aria</a> -->
+    
+        <div id="flags" clase="flags">                           
+            <div class="flags_item " data-language=""="es">
+                <img class="flags_img" src="img/icon/es.jpg" alt="">
+            </div>                 
+            <div class="flags_item" data-language="en">
+                <img class="flags_img" src="img/icon/gb.jpg" alt="">
             </div>
         </div>
-    </div>
-    <!-- Topbar End -->
+        <!-- Image Logo -->
+        <!--<a class="navbar-brand logo-image" href="index.html"><img src="img/icon/Logoicon.ico" alt="alternative"></a>-->
+         <a class="navbar-brand logo-image" href="index.html"><h1 class="m-0 text-white"><span class="text-white">Nauti</span>Rent</h1></a></a>
+         
+        
+        <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggler">
+            <a class="navbar-toggler-awesome fas fa-times text-white" href="index.html"></a>
+           
+        </button>
+        <!-- end of mobile menu toggle button -->
+    
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <!--<li class="nav-item">
+                    <a class="nav-link page-scroll" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link page-scroll" href="contact.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="registroadmin.html">Admin</a>
+                </li>
+               <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#callMe">CALL ME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#projects">PROJECTS</a>
+                </li>-->
+    
+                <!-- Dropdown Menu -->          
+                <!--<li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle page-scroll" href="#about" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">ABOUT</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="terms-conditions.html"><span class="item-text">TERMS CONDITIONS</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="privacy-policy.html"><span class="item-text">PRIVACY POLICY</span></a>
+                    </div>
+                </li>-->
+                <!-- end of dropdown menu -->
+    
+                <!-- <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#contact">CONTACT</a>
+                </li>-->
+            </ul>
+            <span class="nav-item social-icons">
+                <span class="fa-stack">
+                    <a href="#your-link">
+                        <span class="hexagon"></span>
+                        <i class="fab fa-instagram fa-stack-1x"></i>
+                    </a>
+                </span>
+                <span class="fa-stack">
+                    <a href="#your-link">
+                        <span class="hexagon"></span>
+                        <i class="fab fa-youtube fa-stack-1x"></i>
+                    </a>
+                </span>
+            </span>
+        </div>
+    </nav> <!-- end of navbar -->
+    <!-- end of navbar -->
+    
 
 
 
@@ -68,25 +114,6 @@
 
  <!-- Registration Start -->
      <div class="container-fluid bg-registration py-5" style="margin: 0px 0;">
-         <a href="" class="navbar-brand">   
-            <!-- languages -->
-                <div id="flags" clase="flags">                           
-                    <div class="flags_item " data-language=""="es">
-                        <img class="flags_img" src="img/icon/es.jpg" alt="">
-                    </div>                 
-                    <div class="flags_item" data-language="en">
-                        <img class="flags_img" src="img/icon/gb.jpg" alt="">
-                    </div>
-                </div>
-            </a>
-
-        <div class="container-fluid position-relative p-0">
-            
-            <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 1;">        
-                    <a href="index.html"><h1 class="m-0 text-info"><span class="text-white">Nauti</span>Rent</h1></a>   
-                    
-           </div>
-       </div>
         <div class="container py-5">
             <div class="row align-items-center">
                 
@@ -363,7 +390,7 @@
             <div class="col-lg-3 col-md-6 mb-5">
                 <a href="" class="navbar-brand">
                     <div class="logo-footer">         
-                        <img src="img/icon/logo1.jpg" alt="logo">       
+                        <img src="img/icon/Logo3.JPG" alt="logo">       
                     </div>
                 </a>
                 <p>Con base en el Club Náutico Santa Ponça, ponemos a tu disposición nuestra embarcación Bayliner VR5, ideal para disfrutar del mar con comodidad, seguridad y estilo.
@@ -397,6 +424,7 @@
                 <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Dirección</h5>
                 <p><i class="fa fa-map-marker-alt mr-2"></i>Club Nautico Santa Ponça Via de la Creu, 46, 07180 Santa Ponça, Balearic Islands</p>
                 <p><i class="fa fa-phone-alt mr-2"></i>+34 662 352 676</p>
+                <p><i class="fa fa-phone-alt mr-2"></i>+34 673 709 498</p>
                 <p><i class="fa fa-envelope mr-2"></i>Nautirentbalear@gmail.com</p>
                
                 <div class="w-100">
@@ -429,11 +457,11 @@
     <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
         <div class="row">
             <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
-                <p class="m-0 text-white-50">Copyright &copy; <a href="#">Domain</a>. Todos los derechos reservados.</a>
+                <p class="m-0 text-white">Copyright &copy; <a href="#">Domain</a>. Todos los derechos reservados.</a>
                 </p>
             </div>
             <div class="col-lg-6 text-center text-md-right">
-                <p class="m-0 text-white-50">Diseñado por <a href="">Ronald Contreras</a>
+                <p class="m-0 text-white">Diseñado por <a href="">Ronald Contreras</a>
                 </p>
             </div>
         </div>

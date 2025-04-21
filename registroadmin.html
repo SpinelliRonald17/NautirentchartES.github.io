@@ -8,8 +8,8 @@
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
 
-   <!-- Favicon -->
-   <link href="img/icon/logo1.jpg" rel="icon">
+  <!-- Favicon -->
+  <link href="img/icon/Logoicon.ico" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -23,449 +23,280 @@
     <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
+    <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/stylesin.css" rel="stylesheet">
     <link href="css/stylere.css" rel="stylesheet">
+   
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".fixed-top">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
+        <!-- Text Logo - Use this if you don't have a graphic logo -->
+        <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Aria</a> -->
     
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-light pt-3 d-none d-lg-block">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
-                    <div class="d-inline-flex align-items-center">
-                        <p><i class="fa fa-envelope mr-2"></i>Nautirentbalear@gmail.com</p>
-                        <p class="text-body px-3">|</p>
-                        <p><i class="fa fa-phone-alt mr-2"></i>+34 662 352 676</p>
-                    </div>  
-                </div>
-                <div class="col-lg-6 text-center text-lg-right">
-                    <div class="d-inline-flex align-items-center">
-                       <!--  <a class="text-info px-3" href="">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>-->
-                        <!-- <a class="text-info px-3" href="">
-                            <i class="fab fa-twitter"></i>
-                        </a>-->
-                        <!-- <a class="text-info px-3" href="">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>-->
-                        <a class="text-info px-3" href="">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a class="text-info px-3" href="">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </div>
-                </div>
+        <div id="flags" clase="flags">                           
+            <div class="flags_item " data-language=""="es">
+                <img class="flags_img" src="img/icon/es.jpg" alt="">
+            </div>                 
+            <div class="flags_item" data-language="en">
+                <img class="flags_img" src="img/icon/gb.jpg" alt="">
             </div>
         </div>
-    </div>
-    <!-- Topbar End -->
-
-
-
-
-
- <!-- Registration Start -->
-     <div class="container-fluid bg-registration py-5" style="margin: 0px 0;">
-        <a href="" class="navbar-brand">                   
-            <!-- languages -->
-            <div id="flags" clase="flags">                           
-             <div class="flags_item " data-language=""="es">
-                  <img class="flags_img" src="img/icon/es.jpg" alt="">
-             </div>                 
-             <div class="flags_item" data-language="en">
-                  <img class="flags_img" src="img/icon/gb.jpg" alt="">
-              </div>
-        </div>
-     </a>
-
-        <div class="container-fluid position-relative p-0">
-            
-            <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 1;">        
-                <a href="index.html"><h1 class="m-0 text-info"><span class="text-white">Nauti</span>Rent</h1></a>  
-                   
-           </div>
-       </div>
-        <div class="container py-5">
-            <div class="row align-items-center">
-                
-             
-                <div class="col-lg-7">
-                    <div class="card border-0">
-                        <div class="card-header bg-primary text-center p-4">
-                            <h1 class="text-white m-0">Registro de Disponibilidad</h1>
-                        </div>
-                        <div class="card-body rounded-bottom bg-white p-5">
-                            <form id="schedule-form">
-                                <div class="form-group">   
-                                    <label for="date">Fecha:</label>
-                                    <!-- Keep input type="date" for semantics, Flatpickr will enhance it -->
-                                    <input type="date" id="date" name="date" required placeholder="Seleccione una fecha">
-                                </div>
-                                <div class="form-group time-group">
-                                    <div>
-                                        <label for="start-time">Hora Desde:</label>
-                                        <input type="time" id="start-time" name="start-time" required>
-                                    </div>
-                                    <div>
-                                        <label for="end-time">Hora Hasta:</label>
-                                        <input type="time" id="end-time" name="end-time" required>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label>Servicios Disponibles:</label>
-                                    <div class="service-select-group">
-                                        <label for="services-select">Seleccione servicios:</label>
-                                        <select id="services-select" name="services" multiple required>     
-                                            <option value="Consulta General">Samuel 3hs 350€ </option>
-                                            <option value="Limpieza Dental">Dominik 2hs 250€ </option>
-                                            <option value="Revisión">Alejandra 1hs 150€ </option>
-                                            <option value="Otro">Otro (especificar)</option>
-                                        </select>
-                                        <div id="other-service-wrapper" class="other-service-input-wrapper" style="display: none; margin-top: 10px;">
-                                            <label for="service-other">Especificar otro servicio:</label>
-                                            <input type="text" id="service-other" name="service-other" placeholder="Especificar otro servicio">
-                                        </div>
-                                    </div>
-                                </div>
-                                <button type="submit">Guardar Datos</button>
-                            </form>
-                  
-                          <!--<h2>Datos Registrados Recientemente</h2>
-                            <pre id="output"></pre>-->
-                                                  
-                            </div>                     
-                        </div>                      
+        <!-- Image Logo -->
+        <!--<a class="navbar-brand logo-image" href="index.html"><img src="img/icon/Logoicon.ico" alt="alternative"></a>-->
+         <a class="navbar-brand logo-image" href="index.html"><h1 class="m-0 text-white"><span class="text-white">Nauti</span>Rent</h1></a></a>
+         
+        
+        <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggler">
+            <a class="navbar-toggler-awesome fas fa-times text-white" href="index.html"></a>
+           
+        </button>
+        <!-- end of mobile menu toggle button -->
+    
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <!--<li class="nav-item">
+                    <a class="nav-link page-scroll" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link page-scroll" href="contact.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="registroadmin.html">Admin</a>
+                </li>
+               <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#callMe">CALL ME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#projects">PROJECTS</a>
+                </li>-->
+    
+                <!-- Dropdown Menu -->          
+                <!--<li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle page-scroll" href="#about" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">ABOUT</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="terms-conditions.html"><span class="item-text">TERMS CONDITIONS</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="privacy-policy.html"><span class="item-text">PRIVACY POLICY</span></a>
                     </div>
-
-                    <div class="col-lg-5 mb-5 mb-lg-0">
-                    
-                        <h2 class="m-0 text-white">Todas las Disponibilidades Guardadas</h2>
-                        <div id="data-list" class="data-display">
-                            <!-- Data will be dynamically inserted here -->
-                        </div>
-                    </div>
-                </div>
-            </div>
+                </li>-->
+                <!-- end of dropdown menu -->
+    
+                <!-- <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#contact">CONTACT</a>
+                </li>-->
+            </ul>
+            <span class="nav-item social-icons">
+                <span class="fa-stack">
+                    <a href="#your-link">
+                        <span class="hexagon"></span>
+                        <i class="fab fa-instagram fa-stack-1x"></i>
+                    </a>
+                </span>
+                <span class="fa-stack">
+                    <a href="#your-link">
+                        <span class="hexagon"></span>
+                        <i class="fab fa-youtube fa-stack-1x"></i>
+                    </a>
+                </span>
+            </span>
         </div>
-    </div>
-    <!-- Registration End -->
+    </nav> <!-- end of navbar -->
+    <!-- end of navbar -->
+    
 
-<!-- Contact Start -->
-<!--<div class="container-fluid py-5">
+
+
+
+<!-- Registration Start -->
+<div class="container-fluid bg-registration py-5" style="margin: 0px 0;">
     <div class="container py-5">
-        <div class="text-center mb-3 pb-3">
-            <h6 class="text-info text-uppercase" style="letter-spacing: 5px;">Contacto</h6>
-            <h1 class="text-info">Contacto Para Cualquier Consulta</h1>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <div class="contact-form bg-white" style="padding: 30px;">
-                    <div id="success"></div>
-                    <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                        <div class="form-row">
-                            <div class="control-group col-sm-6">
-                                <input type="text" class="form-control p-4" id="name" placeholder="Su Nombre"
-                                    required="required" data-validation-required-message="Por favor ingrese su nombre" />
-                                <p class="help-block text-danger"></p>
+        <div class="row align-items-center">
+            
+            <div class="col-lg-7 mb-5 mb-lg-0">
+                
+                
+                <div class="card border-0">
+                    <div class="card-header bg-primary text-center p-4">
+                        <h1 class="text-white m-0">Registro de Disponibilidad</h1>
+                    </div>
+
+                        <form id="schedule-form">
+                            <div class="form-group">
+                                <label for="date">Fecha:</label>
+                                <!-- Keep input type="date" for semantics, Flatpickr will enhance it -->
+                                <input type="date" id="date" name="date" required placeholder="Seleccione una fecha">
                             </div>
-                            <div class="control-group col-sm-6">
-                                <input type="email" class="form-control p-4" id="email" placeholder="Su Email"
-                                    required="required" data-validation-required-message="Por favor ingrese email" />
-                                <p class="help-block text-danger"></p>
+                            <div class="form-group time-group">
+                                <div>
+                                    <label for="start-time">Hora Desde:</label>
+                                    <input type="time" id="start-time" name="start-time" required>
+                                </div>
+                                <div>
+                                    <label for="end-time">Hora Hasta:</label>
+                                    <input type="time" id="end-time" name="end-time" required>
+                                </div>
                             </div>
-                        </div>
-                        <div class="control-group">
-                            <input type="text" class="form-control p-4" id="subject" placeholder="Asunto"
-                                required="required" data-validation-required-message="Por favor ingrese asunto" />
-                            <p class="help-block text-danger"></p>
-                        </div>
-                        <div class="control-group">
-                            <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Mensaje"
-                                required="required"
-                                data-validation-required-message="Por favor ingrese su mensaje"></textarea>
-                            <p class="help-block text-danger"></p>
-                        </div>
-                        <div class="text-center">
-                            <button class="btn btn-primary py-3 px-4" type="submit" id="sendMessageButton">Enviar</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>-->
-<!-- Contact End -->
-
-
-    <!-- Header Start -->
-    <!--<div class="container-fluid page-header">
-        <div class="container">
-            <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
-                <h3 class="display-4 text-white text-uppercase">Contacto</h3>
-                <div class="d-inline-flex text-white">
-                    <p class="m-0 text-uppercase"><a class="text-white" href="index.html">Inicio</a></p>
-                    <i class="fa fa-angle-double-right pt-1 px-3"></i>
-                    <p class="m-0 text-uppercase text-info">Contacto</p>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Header End -->
-
-
-  <!-- Booking Start -->
-  <!--<div class="container-fluid booking mt-5 pb-5">
-    <div class="container pb-5">
-        <div class="bg-light shadow" style="padding: 30px;">
-            <div class="row align-items-center" style="min-height: 60px;">
-                <div class="col-md-10">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <div class="mb-3 mb-md-0">                                
-                                    <div class="date" id="date1" data-target-input="nearest">
-                                        <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Fecha" data-target="#date1" data-toggle="datetimepicker"/>
+                            <div class="form-group">
+                                <label>Servicios Disponibles:</label>
+                                <div class="service-select-group">            
+                                    <select id="services-selectb" name="servicesb" multiple required>
+                                        <option value="barco1">barco 1</option>
+                                        <option value="barco2">barco 2</option>               
+                                    </select>
+                                    <label for="services-select">Seleccione servicios:</label>
+                                    <select id="services-select" name="services" multiple required>
+                                        <option value="value1">Samuel 350</option>
+                                        <option value="value2">Dominik 200</option>
+                                        <option value="value3">Alejandra 100</option>
+                                        <option value="Otro">Otro (especificar)</option>
+                                    </select>
+                                    <div id="other-service-wrapper" class="other-service-input-wrapper" style="display: none; margin-top: 10px;">
+                                        <label for="service-other">Especificar otro servicio:</label>
+                                        <input type="text" id="service-other" name="service-other" placeholder="Especificar otro servicio">
                                     </div>
                                 </div>
-                        </div>
-                        <div class="col-md-3">
-                            <select class="custom-select px-4" style="height: 47px;">
-                                <option selected>Desde</option>
-                                <option value="1">0:00</option>
-                                <option value="2">0:30</option>
-                                <option value="4">1:00</option>
-                                <option value="5">1:30</option>
-                                <option value="6">2:00</option>
-                                <option value="7">2:30</option>
-                                <option value="8">3:00</option>
-                                <option value="9">3:30</option>
-                                <option value="10">4:00</option>
-                                <option value="11">4:30</option>
-                                <option value="12">5:00</option>
-                                <option value="13">5:30</option>
-                                <option value="14">6:00</option>
-                                <option value="15">6:30</option>
-                                <option value="16">7:00</option>
-                                <option value="17">7:30</option>
-                                <option value="18">8:00</option>
-                                <option value="19">8:30</option>
-                                <option value="20">9:00</option>
-                                <option value="21">9:30</option>
-                                <option value="22">10:00</option>
-                                <option value="23">10:30</option>
-                                <option value="24">11:00</option>
-                                <option value="25">11:30</option>
-                                <option value="26">12:00</option>
-                                <option value="27">12:30</option>
-                                <option value="28">13:00</option>
-                                <option value="29">13:30</option>
-                                <option value="30">14:00</option>
-                                <option value="31">14:30</option>
-                                <option value="32">15:00</option>
-                                <option value="33">15:30</option>
-                                <option value="34">16:00</option>
-                                <option value="35">16:30</option>
-                                <option value="36">17:00</option>
-                                <option value="37">17:30</option>
-                                <option value="38">18:00</option>
-                                <option value="39">18:30</option>
-                                <option value="40">19:00</option>
-                                <option value="41">19:30</option>
-                                <option value="42">20:00</option>
-                                <option value="43">20:30</option>
-                                <option value="44">21:00</option>
-                                <option value="45">21:30</option>
-                                <option value="46">22:00</option>
-                                <option value="47">22:30</option>
-                                <option value="48">23:00</option>
-                            </select>
-                        </div>
-                        <div class="col-md-3">
-                           <div class="mb-3 mb-md-0">
-                            <select class="custom-select px-4" style="height: 47px;">
-                                <option selected>Hasta</option>
-                                <option value="1">0:00</option>
-                                <option value="2">0:30</option>
-                                <option value="4">1:00</option>
-                                <option value="5">1:30</option>
-                                <option value="6">2:00</option>
-                                <option value="7">2:30</option>
-                                <option value="8">3:00</option>
-                                <option value="9">3:30</option>
-                                <option value="10">4:00</option>
-                                <option value="11">4:30</option>
-                                <option value="12">5:00</option>
-                                <option value="13">5:30</option>
-                                <option value="14">6:00</option>
-                                <option value="15">6:30</option>
-                                <option value="16">7:00</option>
-                                <option value="17">7:30</option>
-                                <option value="18">8:00</option>
-                                <option value="19">8:30</option>
-                                <option value="20">9:00</option>
-                                <option value="21">9:30</option>
-                                <option value="22">10:00</option>
-                                <option value="23">10:30</option>
-                                <option value="24">11:00</option>
-                                <option value="25">11:30</option>
-                                <option value="26">12:00</option>
-                                <option value="27">12:30</option>
-                                <option value="28">13:00</option>
-                                <option value="29">13:30</option>
-                                <option value="30">14:00</option>
-                                <option value="31">14:30</option>
-                                <option value="32">15:00</option>
-                                <option value="33">15:30</option>
-                                <option value="34">16:00</option>
-                                <option value="35">16:30</option>
-                                <option value="36">17:00</option>
-                                <option value="37">17:30</option>
-                                <option value="38">18:00</option>
-                                <option value="39">18:30</option>
-                                <option value="40">19:00</option>
-                                <option value="41">19:30</option>
-                                <option value="42">20:00</option>
-                                <option value="43">20:30</option>
-                                <option value="44">21:00</option>
-                                <option value="45">21:30</option>
-                                <option value="46">22:00</option>
-                                <option value="47">22:30</option>
-                                <option value="48">23:00</option>
-                            </select>
                             </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="mb-3 mb-md-0">
-                              <select class="custom-select px-4" style="height: 47px;">
-                                    <option selected>Todos</option>
-                                    <option value="1">Samuel 3hs 350€ </option>
-                                    <option value="2">Dominik 2hs 250€ </option>
-                                    <option value="3">Alejandra 1hs 150€ </option>
-                                </select>
-                              
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <button class="btn btn-primary btn-block" type="submit" style="height: 47px; margin-top: -2px;">Solicitar</button>
-                </div>
+                            <button type="submit">Guardar Datos</button>
+                        </form>
+                </div> 
             </div>
+            <div class="col-lg-5">
+                <h1 class="text-white m-0">Lista de Disponibilidad Guardadas</h1>
+                <div id="data-list" class="data-display">
+                    <!-- Data will be dynamically inserted here -->
+                </div>
+             </div>
         </div>
     </div>
-</div>-->
-<!-- Booking End -->
-
+</div>
 
     
 
 
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
-        <div class="row pt-5">
-            <div class="col-lg-3 col-md-6 mb-5">
-                <a href="" class="navbar-brand">
-                    <div class="logo-footer">         
-                        <img src="img/icon/logo1.jpg" alt="logo">       
-                    </div>
-                </a>
-                <p>Con base en el Club Náutico Santa Ponça, ponemos a tu disposición nuestra embarcación Bayliner VR5, ideal para disfrutar del mar con comodidad, seguridad y estilo.
-                </p>
-                <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Síganos</h6>
-                <div class="d-flex justify-content-start">
-                    <a class="btn btn-outline-primary btn-square" href="https://www.instagram.com/nautirentcharters?igsh=aGV0MXc5aDFzZG5r "><i class="fab fa-instagram"></i></a>                
-                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-youtube"></i></a>
-                  
+ <!-- Footer Start -->
+ <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
+    <div class="row pt-5">
+        <div class="col-lg-3 col-md-6 mb-5">
+            <a href="" class="navbar-brand">
+                <div class="logo-footer">         
+                    <img src="img/icon/Logo3.JPG" alt="logo">       
                 </div>
-            </div>
-           <div class="col-lg-3 col-md-6 mb-5">
-                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Información & Ayuda</h5>
-                <div class="d-flex flex-column justify-content-start">
-                    <a class="text-white-50 mb-2" href="contact.html"><i class="fa fa-angle-right mr-2"></i>Contacto</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Términos y Condiciones</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Quienes Somos</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Flota</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Travelog</a>
-              
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Blog & Noticias</h5>
-                <div class="d-flex flex-column justify-content-start">      
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Noticias</a>
-                    <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Blog</a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Dirección</h5>
-                <p><i class="fa fa-map-marker-alt mr-2"></i>Club Nautico Santa Ponça Via de la Creu, 46, 07180 Santa Ponça, Balearic Islands</p>
-                <p><i class="fa fa-phone-alt mr-2"></i>+34 662 352 676</p>
-                <p><i class="fa fa-envelope mr-2"></i>Nautirentbalear@gmail.com</p>
-               
-                <div class="w-100">
-                    <div class="input-group">
-                       <!--<div class="footer">         
-                            <img src="img/icon/qr_nauti.jpg" alt="logoqr"  href="https://www.instagram.com/nautirentcharters?utm_source=qr&igsh=aGV0MXc5aDFzZG5r">       
-                        </div>--> 
-                    </div>
-                </div>
-            </div>
-
-             <!--container-redes-sociales-->
-        <div class="container-redes" id="redes">
-            <a href="https://api.whatsapp.com/send?phone=34662352676&text=¿Cómo son los servicios que ofreces?" target="_blank">
-                <img src="img/icon/icon-whatsapp.png" title="Enviar mensaje de WhatsApp" alt=""> 
             </a>
-            <!-- <a href="http://m.me/ronald.spinelli.17" target="_blank">
-              <img src="img/icon/icon-messenger.png" alt="" title="Enviar mensaje por Messenger">
-            </a> -->
+            <p>Con base en el Club Náutico Santa Ponça, ponemos a tu disposición nuestra embarcación Bayliner VR5, ideal para disfrutar del mar con comodidad, seguridad y estilo.
+            </p>
+            <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Síganos</h6>
+            <div class="d-flex justify-content-start">
+                <a class="btn btn-outline-primary btn-square" href="https://www.instagram.com/nautirentcharters?igsh=aGV0MXc5aDFzZG5r "><i class="fab fa-instagram"></i></a>                
+                <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-youtube"></i></a>
+              
+            </div>
+        </div>
+       <div class="col-lg-3 col-md-6 mb-5">
+            <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Información & Ayuda</h5>
+            <div class="d-flex flex-column justify-content-start">
+                <a class="text-white-50 mb-2" href="contact.html"><i class="fa fa-angle-right mr-2"></i>Contacto</a>
+                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Términos y Condiciones</a>
+                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Quienes Somos</a>
+                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Flota</a>
+                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Travelog</a>
+          
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+            <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Blog & Noticias</h5>
+            <div class="d-flex flex-column justify-content-start">      
+                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Noticias</a>
+                <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Blog</a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+            <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Dirección</h5>
+            <p><i class="fa fa-map-marker-alt mr-2"></i>Club Nautico Santa Ponça Via de la Creu, 46, 07180 Santa Ponça, Balearic Islands</p>
+            <p><i class="fa fa-phone-alt mr-2"></i>+34 662 352 676</p>
+            <p><i class="fa fa-phone-alt mr-2"></i>+34 673 709 498</p>
+            <p><i class="fa fa-envelope mr-2"></i>Nautirentbalear@gmail.com</p>
+           
+            <div class="w-100">
+                <div class="input-group">
+                   <!--<div class="footer">         
+                        <img src="img/icon/qr_nauti.jpg" alt="logoqr"  href="https://www.instagram.com/nautirentcharters?utm_source=qr&igsh=aGV0MXc5aDFzZG5r">       
+                    </div>--> 
+                </div>
+            </div>
         </div>
 
-            <div class="ubicacion">
-                    
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6156.216976912184!2d2.463689057475657!3d39.5120410792677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x129789cf65718de9%3A0x7cdb2506b307f6de!2sClub%20Nautico%20Santa%20Pon%C3%A7a!5e0!3m2!1ses!2ses!4v1744240499169!5m2!1ses!2ses" width="2000" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-            </div>
+         <!--container-redes-sociales-->
+    <div class="container-redes" id="redes">
+        <a href="https://api.whatsapp.com/send?phone=34662352676&text=¿Cómo son los servicios que ofreces?" target="_blank">
+            <img src="img/icon/icon-whatsapp.png" title="Enviar mensaje de WhatsApp" alt=""> 
+        </a>
+        <!-- <a href="http://m.me/ronald.spinelli.17" target="_blank">
+          <img src="img/icon/icon-messenger.png" alt="" title="Enviar mensaje por Messenger">
+        </a> -->
+    </div>
+
+        <div class="ubicacion">
+                
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6156.216976912184!2d2.463689057475657!3d39.5120410792677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x129789cf65718de9%3A0x7cdb2506b307f6de!2sClub%20Nautico%20Santa%20Pon%C3%A7a!5e0!3m2!1ses!2ses!4v1744240499169!5m2!1ses!2ses" width="2000" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
 
 
+    </div>
+</div>
+<div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
+    <div class="row">
+        <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
+            <p class="m-0 text-white">Copyright &copy; <a href="#">Domain</a>. Todos los derechos reservados.</a>
+            </p>
+        </div>
+        <div class="col-lg-6 text-center text-md-right">
+            <p class="m-0 text-white">Diseñado por <a href="">Ronald Contreras</a>
+            </p>
         </div>
     </div>
-    <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
-        <div class="row">
-            <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
-                <p class="m-0 text-white-50">Copyright &copy; <a href="#">Domain</a>. Todos los derechos reservados.</a>
-                </p>
-            </div>
-            <div class="col-lg-6 text-center text-md-right">
-                <p class="m-0 text-white-50">Diseñado por <a href="">Ronald Contreras</a>
-                </p>
-            </div>
-        </div>
-    </div>
-    <!-- Footer End -->
+</div>
+<!-- Footer End -->
 
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+<!-- Back to Top -->
+<a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/tempusdominus/js/moment.min.js"></script>
-    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
-    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/tempusdominus/js/moment.min.js"></script>
+<script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+<script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
-    <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+<!-- Add Flatpickr JS -->
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<!-- Optional: Add Spanish locale for Flatpickr -->
+<script src="https://npmcdn.com/flatpickr/dist/l10n/es.js"></script>
+
+<script type="importmap">
+  {
+    "imports": {
+      "lodash": "https://cdn.jsdelivr.net/npm/lodash-es@4.17.21/lodash.min.js"
+    }
+  }
+</script>
+<script type="module" src="scriptre.js"></script>
+
+<!-- Contact Javascript File -->
+<script src="mail/jqBootstrapValidation.min.js"></script>
+<script src="mail/contact.js"></script>
+
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
 </body>
 
 </html>
