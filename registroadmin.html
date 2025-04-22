@@ -23,94 +23,91 @@
     <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
-    <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/stylesin.css" rel="stylesheet">
     <link href="css/stylere.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+    <link href="css/magnific-popup.css" rel="stylesheet">
    
-</head>
+</head> 
 
-<body data-spy="scroll" data-target=".fixed-top">
+<body style="background: url(img/carousel-2.jpg); background-size: cover;">
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
-        <!-- Text Logo - Use this if you don't have a graphic logo -->
-        <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Aria</a> -->
-    
-        <div id="flags" clase="flags">                           
-            <div class="flags_item " data-language=""="es">
-                <img class="flags_img" src="img/icon/es.jpg" alt="">
-            </div>                 
-            <div class="flags_item" data-language="en">
-                <img class="flags_img" src="img/icon/gb.jpg" alt="">
-            </div>
-        </div>
-        <!-- Image Logo -->
-        <!--<a class="navbar-brand logo-image" href="index.html"><img src="img/icon/Logoicon.ico" alt="alternative"></a>-->
-         <a class="navbar-brand logo-image" href="index.html"><h1 class="m-0 text-white"><span class="text-white">Nauti</span>Rent</h1></a></a>
-         
+<!-- Navbar -->
+<nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top" id="nav">
+       <!-- Text Logo - Use this if you don't have a graphic logo -->
+       <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Aria</a> -->
+   
+       <div id="flags" clase="flags">                           
+           <div class="flags_item " data-language=""="es">
+               <img class="flags_img" src="img/icon/es.jpg" alt="">
+           </div>                 
+           <div class="flags_item" data-language="en">
+               <img class="flags_img" src="img/icon/gb.jpg" alt="">
+           </div>
+       </div>
+       <!-- Image Logo -->
+       <!--<a class="navbar-brand logo-image" href="index.html"><img src="img/icon/Logoicon.ico" alt="alternative"></a>-->
+        <a class="navbar-brand logo-image" href="index.html"><h1 class="m-0 text-white"><span class="text-white">Nauti</span>Rent</h1></a></a>
         
-        <!-- Mobile Menu Toggle Button -->
-        <button class="navbar-toggler">
-            <a class="navbar-toggler-awesome fas fa-times text-white" href="index.html"></a>
-           
-        </button>
-        <!-- end of mobile menu toggle button -->
-    
-        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-            <ul class="navbar-nav ml-auto">
-                <!--<li class="nav-item">
-                    <a class="nav-link page-scroll" href="index.html">Inicio <span class="sr-only">(current)</span></a>
-                </li>
-                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="contact.html">Contacto</a>
-                </li>
+       
+       <!-- Mobile Menu Toggle Button -->
+       <button class="text-white navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+           <a class="navbar-toggler-awesome fas fa-times text-white" href="index.html"></a>        
+       </button>
+       <!-- end of mobile menu toggle button -->
+   
+       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+           <ul class="navbar-nav ml-auto">
+               <!--<li class="nav-item">
+                   <a class="nav-link page-scroll" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+               </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="registroadmin.html">Admin</a>
-                </li>
+                   <a class="nav-link page-scroll" href="contact.html">Contacto</a>
+               </li>
                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#callMe">CALL ME</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#projects">PROJECTS</a>
-                </li>-->
-    
-                <!-- Dropdown Menu -->          
-                <!--<li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle page-scroll" href="#about" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">ABOUT</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="terms-conditions.html"><span class="item-text">TERMS CONDITIONS</span></a>
-                        <div class="dropdown-items-divide-hr"></div>
-                        <a class="dropdown-item" href="privacy-policy.html"><span class="item-text">PRIVACY POLICY</span></a>
-                    </div>
-                </li>-->
-                <!-- end of dropdown menu -->
-    
-                <!-- <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#contact">CONTACT</a>
-                </li>-->
-            </ul>
-            <span class="nav-item social-icons">
-                <span class="fa-stack">
-                    <a href="#your-link">
-                        <span class="hexagon"></span>
-                        <i class="fab fa-instagram fa-stack-1x"></i>
-                    </a>
-                </span>
-                <span class="fa-stack">
-                    <a href="#your-link">
-                        <span class="hexagon"></span>
-                        <i class="fab fa-youtube fa-stack-1x"></i>
-                    </a>
-                </span>
-            </span>
-        </div>
-    </nav> <!-- end of navbar -->
-    <!-- end of navbar -->
-    
-
-
-
+                   <a class="nav-link page-scroll" href="registroadmin.html">Admin</a>
+               </li>
+              <li class="nav-item">
+                   <a class="nav-link page-scroll" href="#callMe">CALL ME</a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link page-scroll" href="#projects">PROJECTS</a>
+               </li>-->
+   
+               <!-- Dropdown Menu -->          
+               <!--<li class="nav-item dropdown">
+                   <a class="nav-link dropdown-toggle page-scroll" href="#about" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">ABOUT</a>
+                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                       <a class="dropdown-item" href="terms-conditions.html"><span class="item-text">TERMS CONDITIONS</span></a>
+                       <div class="dropdown-items-divide-hr"></div>
+                       <a class="dropdown-item" href="privacy-policy.html"><span class="item-text">PRIVACY POLICY</span></a>
+                   </div>
+               </li>-->
+               <!-- end of dropdown menu -->
+   
+               <!-- <li class="nav-item">
+                   <a class="nav-link page-scroll" href="#contact">CONTACT</a>
+               </li>-->
+           </ul>
+           <span class="nav-item social-icons">
+               <span class="fa-stack">
+                   <a href="#your-link">
+                       <span class="hexagon"></span>
+                       <i class="fab fa-instagram fa-stack-1x text-white"></i>
+                   </a>
+               </span>
+               <span class="fa-stack">
+                   <a href="#your-link">
+                       <span class="hexagon"></span>
+                       <i class="fab fa-youtube fa-stack-1x text-white"></i>
+                   </a>
+               </span>
+           </span>
+       </div>
+   </nav> <!-- end of navbar -->
+   <!-- end of navbar -->
+   
 
 <!-- Registration Start -->
 <div class="container-fluid bg-registration py-5" style="margin: 0px 0;">
