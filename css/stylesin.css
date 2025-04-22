@@ -785,7 +785,7 @@ input[type='checkbox'] {
 	text-align: center;
 }
 
-.header .text-container {
+.header .text-containers {
 	margin-bottom: 3rem;
 }
 
@@ -813,7 +813,7 @@ input[type='checkbox'] {
 	padding-bottom: 3rem;
 }
 
-.basic-1 .text-container {
+.basic-1 .text-containers {
 	margin-bottom: 3rem;
 }
 
@@ -830,18 +830,18 @@ input[type='checkbox'] {
 }
 
 /* Hover Animation */
-.basic-1 .image-container {
+.basic-1 .image-containers {
 	overflow: hidden;
 	border-radius: 0.25rem;
 }
 
-.basic-1 .image-container img {
+.basic-1 .image-containers img {
 	margin: 0;
 	border-radius: 0.25rem;
 	transition: all 0.3s;
 }
 
-.basic-1 .image-container:hover img {
+.basic-1 .image-containers:hover img {
 	-moz-transform: scale(1.15);
 	-webkit-transform: scale(1.15);
 	transform: scale(1.15);
@@ -963,7 +963,7 @@ input[type='checkbox'] {
 	color: #14bf98;
 }
 
-.cards-2 .button-container {
+.cards-2 .button-containers {
 	margin-top: -1.375rem;
 	text-align: center;
 }
@@ -982,7 +982,7 @@ input[type='checkbox'] {
 	background-size: cover;
 }
 
-.accordion .accordion-container {
+.accordion .accordion-containers {
 	max-width: 90%;
 	margin-right: auto;
 	margin-left: auto;
@@ -1058,7 +1058,7 @@ input[type='checkbox'] {
 /*************************/
 /*     09. Details 2     */
 /*************************/
-.tabs .tabs-container {
+.tabs .tabs-containers {
 	max-width: 90%;
 	margin-right: auto;
 	margin-left: auto;
@@ -1095,11 +1095,11 @@ input[type='checkbox'] {
 	vertical-align: 20%;
 }
 
-.tabs #tab-1 .progress-container {
+.tabs #tab-1 .progress-containers {
 	margin-top: 1.5rem;
 }
 
-.tabs #tab-1 .progress-container .title {
+.tabs #tab-1 .progress-containers .title {
 	margin-bottom: 0.25rem;
 	color: #484a46;
 	font: 600 0.875rem/1.25rem "Open Sans", sans-serif;
@@ -1187,11 +1187,11 @@ input[type='checkbox'] {
 	text-align: center;
 }
 
-.slider .slider-container {
+.slider .slider-containers {
 	position: relative;
 }
 
-.slider .swiper-container {
+.slider .swiper-containers {
 	position: static;
 	width: 90%;
 	text-align: center;
@@ -1252,7 +1252,7 @@ input[type='checkbox'] {
 	background-color: #153e52;
 }
 
-.form-1 .text-container {
+.form-1 .text-containers {
 	margin-bottom: 4rem;
 }
 
@@ -1445,7 +1445,7 @@ input[type='checkbox'] {
 	margin-bottom: 2rem;
 }
 
-.lightbox-basic .testimonial-container {
+.lightbox-basic .testimonial-containers {
 	margin-top: 1.75rem;
 	margin-bottom: 2.125rem;
 	padding: 1.125rem 1.5rem 1.125rem 1.5rem;
@@ -1581,11 +1581,11 @@ input[type='checkbox'] {
 	padding-bottom: 5.25rem;
 }
 
-.counter .image-container {
+.counter .image-containers {
 	margin-bottom: 3rem;
 }
 
-.counter .image-container img {
+.counter .image-containers img {
 	border-radius: 0.25rem;
 }
 
@@ -1647,7 +1647,7 @@ input[type='checkbox'] {
 	background-color: #fbfbfb;
 }
 
-.form-2 .text-container {
+.form-2 .text-containers {
 	margin-bottom: 3rem;
 }
 
@@ -1722,7 +1722,7 @@ input[type='checkbox'] {
 	background-color: #113448;
 }
 
-.footer .text-container {
+.footer .text-containers {
 	margin-bottom: 2.25rem;
 }
 
@@ -1815,11 +1815,11 @@ a:hover.back-to-top {
 	margin-bottom: 1rem;
 }
 
-.ex-basic-2 .text-container {
+.ex-basic-2 .text-containers {
 	margin-bottom: 3.625rem;
 }
 
-.ex-basic-2 .text-container.last {
+.ex-basic-2 .text-containers.last {
 	margin-bottom: 0;
 }
 
@@ -1833,7 +1833,7 @@ a:hover.back-to-top {
 	margin-left: 0.625rem;
 }
 
-.ex-basic-2 .form-container {
+.ex-basic-2 .form-containers {
 	margin-top: 2.5rem;
 }
 
@@ -1937,14 +1937,14 @@ a:hover.back-to-top {
 
 
 	/* Details 1 */
-	.accordion .accordion-container {
+	.accordion .accordion-containers {
 		max-width: 70%;
 	}
 	/* end of details 1 */
 
 
 	/* Details 2 */
-	.tabs .tabs-container {
+	.tabs .tabs-containers {
 		max-width: 70%;
 	}
 
@@ -2019,7 +2019,7 @@ a:hover.back-to-top {
 		padding-bottom: 9rem;
 	}
 
-	.ex-basic-2 .form-container {
+	.ex-basic-2 .form-containers {
 		margin-top: 0.5rem;
 	}
 	/* end of extra pages */
@@ -2081,7 +2081,7 @@ a:hover.back-to-top {
 		padding-bottom: 15rem;
 	}
 
-	.header .text-container {
+	.header .text-containers {
 		margin-top: 6.5rem;
 	}
 	/* end of header */
@@ -2092,7 +2092,7 @@ a:hover.back-to-top {
 		padding-top: 6.875rem;
 	}
 
-	.basic-1 .text-container {
+	.basic-1 .text-containers {
 		margin-bottom: 0;
 	}
 	/* end of intro */
@@ -2145,7 +2145,7 @@ a:hover.back-to-top {
 		vertical-align: top;
 	}
 	
-	.accordion .accordion-container {
+	.accordion .accordion-containers {
 		max-width: 88%;
 		margin-left: 2rem;
 		padding-bottom: 0;
@@ -2175,7 +2175,7 @@ a:hover.back-to-top {
 		display: inline-block;
 	}
 
-	.tabs .tabs-container {
+	.tabs .tabs-containers {
 		max-width: 88%;
 		margin-left: 2rem;
 		padding-top: 6.75rem;
@@ -2193,7 +2193,7 @@ a:hover.back-to-top {
 		padding-top: 7rem;	
 	}
 
-	.form-1 .text-container {
+	.form-1 .text-containers {
 		margin-bottom: 0;
 	}
 	/* end of call me */
@@ -2226,7 +2226,7 @@ a:hover.back-to-top {
 
 
 	/* About */
-	.counter .image-container {
+	.counter .image-containers {
 		margin-bottom: 0;
 	}
 	/* end of about */
@@ -2237,7 +2237,7 @@ a:hover.back-to-top {
 		padding-top: 6.875rem;
 	}
 
-	.form-2 .text-container {
+	.form-2 .text-containers {
 		margin-bottom: 0;
 	}
 	/* end of contact */
@@ -2290,7 +2290,7 @@ a:hover.back-to-top {
 
 
 	/* Intro */
-	.basic-1 .text-container {
+	.basic-1 .text-containers {
 		margin-top: 1.875rem;
 		margin-right: 3rem;
 	}
@@ -2326,7 +2326,7 @@ a:hover.back-to-top {
 
 
 	/* Details 1 */
-	.accordion .accordion-container {
+	.accordion .accordion-containers {
 		max-width: 28rem;
 		margin-left: 5rem;
 	}
@@ -2334,7 +2334,7 @@ a:hover.back-to-top {
 
 
 	/* Details 2 */
-	.tabs .tabs-container {
+	.tabs .tabs-containers {
 		max-width: 28rem;
 		margin-right: 5rem;
 		margin-left: auto;
@@ -2347,7 +2347,7 @@ a:hover.back-to-top {
 
 
 	/* Call Me */
-	.form-1 .text-container {
+	.form-1 .text-containers {
 		margin-top: 1.375rem;
 		margin-right: 1.75rem;
 		margin-left: 3rem
@@ -2386,11 +2386,11 @@ a:hover.back-to-top {
 		padding-bottom: 6.125rem;
 	}
 
-	.counter .image-container {
+	.counter .image-containers {
 		margin-right: 1.5rem;
 	}
 
-	.counter .text-container {
+	.counter .text-containers {
 		margin-top: 0.375rem;
 		margin-right: 2.5rem;
 		margin-left: 2rem;
@@ -2399,7 +2399,7 @@ a:hover.back-to-top {
 	
 	
 	/* Contact */
-	.form-2 .text-container {
+	.form-2 .text-containers {
 		margin-top: 0.875rem;
 		margin-right: 1.5rem;
 	}
@@ -2411,7 +2411,7 @@ a:hover.back-to-top {
 
 
 	/* Footer */
-	.footer .text-container.about {
+	.footer .text-containers.about {
 		margin-right: 5rem;
 	}
 	/* end of footer */
@@ -2424,7 +2424,7 @@ a:hover.back-to-top {
 		margin-left: auto;
 	}
 
-	.ex-basic-2 .form-container {
+	.ex-basic-2 .form-containers {
 		margin-left: 1.75rem;
 	}
 	/* end of extra pages */
