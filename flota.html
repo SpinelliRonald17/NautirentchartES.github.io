@@ -25,19 +25,14 @@
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/stylesin.css" rel="stylesheet">
-    <link href="css/swiper.css" rel="stylesheet">
-    <link href="css/fontawesome-all.css" rel="stylesheet">
+   
 	<link href="css/magnific-popup.css" rel="stylesheet">
-    <!-- Styles -->
-
-
 </head>
 
-<body >
-    
+<body>
 
-   <!-- Navbar -->
-   <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top" id="nav">
+<!-- Navbar -->
+<nav class="navbar navbar-expand-md navbar-dark fixed-top" id="nav">
     <!-- Text Logo - Use this if you don't have a graphic logo -->
     <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Aria</a> -->
 
@@ -51,12 +46,12 @@
     </div>
     <!-- Image Logo -->
     <!--<a class="navbar-brand logo-image" href="index.html"><img src="img/icon/Logoicon.ico" alt="alternative"></a>-->
-     <a class="navbar-brand logo-image" href="index.html"><h1 class="m-0 text-white"><span class="text-white">Nauti</span>Rent</h1></a></a>
+     <a class="navbar-brand logo-image" href="index.html"><h1 class="m-0 text-white"><span class="text-white">Nauti</span>Rent</h1></a>
      
     
     <!-- Mobile Menu Toggle Button -->
-    <button class="navbar-toggler">
-        <a class="navbar-toggler-awesome fas fa-times text-white" href="index.html"></a> 
+    <button class="text-white navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-awesome fas fa-bars"></span>
     </button>
     <!-- end of mobile menu toggle button -->
 
@@ -64,46 +59,22 @@
         <ul class="navbar-nav ml-auto">
             <!--<li class="nav-item">
                 <a class="nav-link page-scroll" href="index.html">Inicio <span class="sr-only">(current)</span></a>
-            </li>
-             <li class="nav-item">
-                <a class="nav-link page-scroll" href="contact.html">Contacto</a>
-            </li>
+            </li>-->
             <li class="nav-item">
-                <a class="nav-link page-scroll" href="registroadmin.html">Admin</a>
+                <a class="nav-link page-scroll text-white" href="contact.html">Nautirentbalear@gmail.com</a>
             </li>
-           <li class="nav-item">
-                <a class="nav-link page-scroll" href="#callMe">CALL ME</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link page-scroll" href="#projects">PROJECTS</a>
-            </li>-->
-
-            <!-- Dropdown Menu -->          
-            <!--<li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle page-scroll" href="#about" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">ABOUT</a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="terms-conditions.html"><span class="item-text">TERMS CONDITIONS</span></a>
-                    <div class="dropdown-items-divide-hr"></div>
-                    <a class="dropdown-item" href="privacy-policy.html"><span class="item-text">PRIVACY POLICY</span></a>
-                </div>
-            </li>-->
-            <!-- end of dropdown menu -->
-
-            <!-- <li class="nav-item">
-                <a class="nav-link page-scroll" href="#contact">CONTACT</a>
-            </li>-->
         </ul>
         <span class="nav-item social-icons">
             <span class="fa-stack">
                 <a href="#your-link">
                     <span class="hexagon"></span>
-                    <i class="fab fa-instagram fa-stack-1x"></i>
+                    <i class="fab fa-instagram fa-stack-1x text-white"></i>
                 </a>
             </span>
             <span class="fa-stack">
                 <a href="#your-link">
                     <span class="hexagon"></span>
-                    <i class="fab fa-youtube fa-stack-1x"></i>
+                    <i class="fab fa-youtube fa-stack-1x text-white"></i>
                 </a>
             </span>
         </span>
@@ -112,401 +83,291 @@
 <!-- end of navbar -->
 
 
+ 
 
-<!-- Header Start -->
-<div class="container-fluid page-header">
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="header-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-container">
+                            <h1>Nuestra <span id="js-rotating">FLOTA, BARCA</span></h1>
+                            <!--<p class="p-heading p-large">Aria is a top consultancy company specializing in business growth using online marketing and conversion optimization tactics</p>-->
+                            <!--<a class="btn-solid-lg page-scroll" href="#intro">FLOTA</a>-->
+                        </div>
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of header-content -->
+    </header> <!-- end of header -->
+    <!-- end of header -->
+
+
+
+
+ <!-- Projects -->
+ <div id="projects" class="filter">
     <div class="container">
-        <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
-            <h3 class="display-4 text-white text-uppercase">Flota</h3>
-            <div class="d-inline-flex text-white">
-
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Header End -->
-
-
-    <!-- Projects -->
-	<div id="projects" class="filter">
-		<div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title">Embarcaciones</div>
-                    <h2>Navega en toda la isla</h2>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <!-- Filter -->
-                    <div class="button-group filters-button-group">
-                        <a class="button is-checked" data-filter="*"><span>Mostar Todo</span></a>
-                        <a class="button" data-filter=".design"><span>Con licencia</span></a>
-                        <a class="button" data-filter=".development"><span>Sin licencia</span></a>
-                        <a class="button" data-filter=".marketing"><span>otros</span></a>
-                        <!--<a class="button" data-filter=".seo"><span>SEO</span></a>-->
-                    </div> <!-- end of button group -->
-                    <div class="grid">
-                        <div class="element-item development">
-                            <a class="popup-with-move-anim" href="#project-1"><div class="element-item-overlay"><span>Barcos en linea</span></div><img src="img/carousel-1.jpg" alt="alternative"></a>
-                        </div>
-                        <div class="element-item development">
-                            <a class="popup-with-move-anim" href="#project-2"><div class="element-item-overlay"><span>Barcos cerca</span></div><img src="img/carousel-2.jpg" alt="alternative"></a>
-                        </div>
-                        <div class="element-item design development marketing">
-                            <a class="popup-with-move-anim" href="#project-3"><div class="element-item-overlay"><span>Tipos Barcos</span></div><img src="img/carousel-1.jpg" alt="alternative"></a>
-                        </div>
-                        <div class="element-item design development marketing">
-                            <a class="popup-with-move-anim" href="#project-4"><div class="element-item-overlay"><span>Barcos en linea</span></div><img src="img/carousel-2.jpg" alt="alternative"></a>
-                        </div>
-                        <div class="element-item design development marketing seo">
-                            <a class="popup-with-move-anim" href="#project-5"><div class="element-item-overlay"><span>Renta de Barcos</span></div><img src="img/carousel-1.jpg" alt="alternative"></a>
-                        </div>
-                        <div class="element-item design marketing seo">
-                            <a class="popup-with-move-anim" href="#project-6"><div class="element-item-overlay"><span>Barcos por Horas</span></div><img src="img/carousel-1.jpg" alt="alternative"></a>
-                        </div>
-                        <div class="element-item design marketing">
-                            <a class="popup-with-move-anim" href="#project-7"><div class="element-item-overlay"><span>Barcos Dias</span></div><img src="img/carousel-2.jpg" alt="alternative"></a>
-                        </div>
-                        <div class="element-item design marketing">
-                            <a class="popup-with-move-anim" href="#project-8"><div class="element-item-overlay"><span>Barcos</span></div><img src="img/carousel-1.jpg" alt="alternative"></a>
-                        </div>
-                    </div> <!-- end of grid -->
-                    <!-- end of filter -->
-                    
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-		</div> <!-- end of container -->
-    </div> <!-- end of filter -->
-    <!-- end of projects -->
-
-
-    <!-- Project Lightboxes -->
-    <!-- Lightbox -->
-    <div id="project-1" class="lightbox-basic zoom-anim-dialog mfp-hide">
         <div class="row">
-            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-            <div class="col-lg-8">
-                <img class="img-fluid" src="img/carousel-1.jpg" alt="alternative">
-            </div> <!-- end of col -->
-            <div class="col-lg-4">
-                <h2 class="text-info">RIB Protender 440</h2>
-                <hr class="line-heading">
-                <h3 class="text-dark">Nautirent</h3>
-                
-                <p class="testimonial-text text-dark">Esta embarcación semirrígida de 15cv, que puedes conducir sin necesidad de licencia, es ideal para disfrutar de las vistas mientras navegas a tu ritmo.</p>
-                   
-                <h6 class="m-0 text-dark"><span class="text-info">Capacidad: </span>4 personas</h6>
-                    <h6 class="m-0 text-dark"><span class="text-info">Eslora: </span>4,4 metros</h6>
-                    <h6 class="m-0 text-dark"><span class="text-info">Tipo: </span>motor fueraborda, 15cv</h6>
-                    <h6 class="m-0 text-dark"><span class="text-info">Requisito: </span>Sin licencia de navegación</h6>
-                <div class="testimonial-container">
-                     <h3 class="testimonial-author">Desde 200€</h3>
-                </div>
-                <a class="btn-solid-reg" href="#your-link">Reservar</a>
+            <div class="col-lg-12">
+                <div class="section-title">Embarcaciones</div>
+                <h2>Navega en toda la isla</h2>
             </div> <!-- end of col -->
         </div> <!-- end of row -->
-    </div> <!-- end of lightbox-basic -->
-    <!-- end of lightbox -->
-
-    <!-- Lightbox -->
-    <div id="project-2" class="lightbox-basic zoom-anim-dialog mfp-hide">
         <div class="row">
-            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-            <div class="col-lg-8">
-                <img class="img-fluid" src="img/carousel-2.jpg" alt="alternative">
-            </div> <!-- end of col -->
-            <div class="col-lg-4">
-                <h2 class="text-info">RIB Protender 440</h2>
-                <hr class="line-heading">
-                <h3 class="text-dark">Nautirent</h3>
+            <div class="col-lg-12">
+                <!-- Filter -->
+                <div class="button-group filters-button-group">
+                    <a class="button is-checked" data-filter="*"><span>Mostar Todo</span></a>
+                    <a class="button" data-filter=".design"><span>Con licencia</span></a>
+                    <a class="button" data-filter=".development"><span>Sin licencia</span></a>
+                    <a class="button" data-filter=".marketing"><span>otros</span></a>
+                    <!--<a class="button" data-filter=".seo"><span>SEO</span></a>-->
+                </div> <!-- end of button group -->
+                <div class="grid">
+                    <div class="element-item development">
+                        <a class="popup-with-move-anim" href="#project-1"><div class="element-item-overlay"><span>Barcos en linea</span></div><img src="img/carousel-1.jpg"  auto;" alt="alternative"></a>
+                    </div>
+                    <div class="element-item development">
+                        <a class="popup-with-move-anim" href="#project-2"><div class="element-item-overlay"><span>Barcos cerca</span></div><img src="img/carousel-1.jpg" alt="alternative"></a>
+                    </div>
+                    <div class="element-item design development marketing">
+                        <a class="popup-with-move-anim" href="#project-3"><div class="element-item-overlay"><span>Tipos Barcos</span></div><img src="img/carousel-1.jpg" alt="alternative"></a>
+                    </div>
+                    <div class="element-item design development marketing">
+                        <a class="popup-with-move-anim" href="#project-4"><div class="element-item-overlay"><span>Barcos en linea</span></div><img src="img/carousel-1.jpg" alt="alternative"></a>
+                    </div>
+                  
+                </div> <!-- end of grid -->
+                <!-- end of filter -->
                 
-                <p class="testimonial-text text-dark">Esta embarcación semirrígida de 15cv, que puedes conducir sin necesidad de licencia, es ideal para disfrutar de las vistas mientras navegas a tu ritmo.</p>
-                   
-                <h6 class="m-0 text-dark"><span class="text-info">Capacidad: </span>4 personas</h6>
-                    <h6 class="m-0 text-dark"><span class="text-info">Eslora: </span>4,4 metros</h6>
-                    <h6 class="m-0 text-dark"><span class="text-info">Tipo: </span>motor fueraborda, 15cv</h6>
-                    <h6 class="m-0 text-dark"><span class="text-info">Requisito: </span>Sin licencia de navegación</h6>
-                <div class="testimonial-container">
-                     <h3 class="testimonial-author">Desde 200€</h3>
-                </div>
-                <a class="btn-solid-reg" href="#your-link">Reservar</a>
             </div> <!-- end of col -->
         </div> <!-- end of row -->
-    </div> <!-- end of lightbox-basic -->
-    <!-- end of lightbox -->
-
-    <!-- Lightbox -->
-    <div id="project-3" class="lightbox-basic zoom-anim-dialog mfp-hide">
-        <div class="row">
-            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-            <div class="col-lg-8">
-                <img class="img-fluid" src="img/carousel-1.jpg" alt="alternative">
-            </div> <!-- end of col -->
-            <div class="col-lg-4">
-                <h2 class="text-info">RIB Protender 440</h2>
-                <hr class="line-heading">
-                <h3 class="text-dark">Nautirent</h3>
-                
-                <p class="testimonial-text text-dark">Esta embarcación semirrígida de 15cv, que puedes conducir sin necesidad de licencia, es ideal para disfrutar de las vistas mientras navegas a tu ritmo.</p>
-                   
-                <h6 class="m-0 text-dark"><span class="text-info">Capacidad: </span>4 personas</h6>
-                    <h6 class="m-0 text-dark"><span class="text-info">Eslora: </span>4,4 metros</h6>
-                    <h6 class="m-0 text-dark"><span class="text-info">Tipo: </span>motor fueraborda, 15cv</h6>
-                    <h6 class="m-0 text-dark"><span class="text-info">Requisito: </span>Sin licencia de navegación</h6>
-                <div class="testimonial-container">
-                     <h3 class="testimonial-author">Desde 200€</h3>
-                </div>
-                <a class="btn-solid-reg" href="#your-link">Reservar</a>
-            </div> <!-- end of col -->
-        </div> <!-- end of row -->
-    </div> <!-- end of lightbox-basic -->
-    <!-- end of lightbox -->
-
-    <!-- Lightbox -->
-    <div id="project-4" class="lightbox-basic zoom-anim-dialog mfp-hide">
-        <div class="row">
-            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-            <div class="col-lg-8">
-                <img class="img-fluid" src="img/carousel-2.jpg" alt="alternative">
-            </div> <!-- end of col -->
-            <div class="col-lg-4">
-                <h2 class="text-info">RIB Protender 440</h2>
-                <hr class="line-heading">
-                <h3 class="text-dark">Nautirent</h3>
-                
-                <p class="testimonial-text text-dark">Esta embarcación semirrígida de 15cv, que puedes conducir sin necesidad de licencia, es ideal para disfrutar de las vistas mientras navegas a tu ritmo.</p>
-                   
-                <h6 class="m-0 text-dark"><span class="text-info">Capacidad: </span>4 personas</h6>
-                    <h6 class="m-0 text-dark"><span class="text-info">Eslora: </span>4,4 metros</h6>
-                    <h6 class="m-0 text-dark"><span class="text-info">Tipo: </span>motor fueraborda, 15cv</h6>
-                    <h6 class="m-0 text-dark"><span class="text-info">Requisito: </span>Sin licencia de navegación</h6>
-                <div class="testimonial-container">
-                     <h3 class="testimonial-author">Desde 200€</h3>
-                </div>
-                <a class="btn-solid-reg" href="#your-link">Reservar</a>
-            </div> <!-- end of col -->
-        </div> <!-- end of row -->
-    </div> <!-- end of lightbox-basic -->
-    <!-- end of lightbox -->
-
-    <!-- Lightbox -->
-    <div id="project-5" class="lightbox-basic zoom-anim-dialog mfp-hide">
-        <div class="row">
-            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-            <div class="col-lg-8">
-                <img class="img-fluid" src="img/carousel-1.jpg" alt="alternative">
-            </div> <!-- end of col -->
-            <div class="col-lg-4">
-                <h2 class="text-info">RIB Protender 440</h2>
-                <hr class="line-heading">
-                <h3 class="text-dark">Nautirent</h3>
-                
-                <p class="testimonial-text text-dark">Esta embarcación semirrígida de 15cv, que puedes conducir sin necesidad de licencia, es ideal para disfrutar de las vistas mientras navegas a tu ritmo.</p>
-                   
-                <h6 class="m-0 text-dark"><span class="text-info">Capacidad: </span>4 personas</h6>
-                    <h6 class="m-0 text-dark"><span class="text-info">Eslora: </span>4,4 metros</h6>
-                    <h6 class="m-0 text-dark"><span class="text-info">Tipo: </span>motor fueraborda, 15cv</h6>
-                    <h6 class="m-0 text-dark"><span class="text-info">Requisito: </span>Sin licencia de navegación</h6>
-                <div class="testimonial-container">
-                     <h3 class="testimonial-author">Desde 200€</h3>
-                </div>
-                <a class="btn-solid-reg" href="#your-link">Reservar</a>
-            </div> <!-- end of col -->
-        </div> <!-- end of row -->
-    </div> <!-- end of lightbox-basic -->
-    <!-- end of lightbox -->
-
-    <!-- Lightbox -->
-    <div id="project-6" class="lightbox-basic zoom-anim-dialog mfp-hide">
-        <div class="row">
-            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-            <div class="col-lg-8">
-                <img class="img-fluid" src="img/carousel-2.jpg" alt="alternative">
-            </div> <!-- end of col -->
-            <div class="col-lg-4">
-                <h2 class="text-info">RIB Protender 440</h2>
-                <hr class="line-heading">
-                <h3 class="text-dark">Nautirent</h3>
-                
-                <p class="testimonial-text text-dark">Esta embarcación semirrígida de 15cv, que puedes conducir sin necesidad de licencia, es ideal para disfrutar de las vistas mientras navegas a tu ritmo.</p>
-                   
-                <h6 class="m-0 text-dark"><span class="text-info">Capacidad: </span>4 personas</h6>
-                    <h6 class="m-0 text-dark"><span class="text-info">Eslora: </span>4,4 metros</h6>
-                    <h6 class="m-0 text-dark"><span class="text-info">Tipo: </span>motor fueraborda, 15cv</h6>
-                    <h6 class="m-0 text-dark"><span class="text-info">Requisito: </span>Sin licencia de navegación</h6>
-                <div class="testimonial-container">
-                     <h3 class="testimonial-author">Desde 200€</h3>
-                </div>
-                <a class="btn-solid-reg" href="#your-link">Reservar</a>
-            </div> <!-- end of col -->
-        </div> <!-- end of row -->
-    </div> <!-- end of lightbox-basic -->
-    <!-- end of lightbox -->
-
-    <!-- Lightbox -->
-    <div id="project-7" class="lightbox-basic zoom-anim-dialog mfp-hide">
-        <div class="row">
-            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-            <div class="col-lg-8">
-                <img class="img-fluid" src="img/carousel-1.jpg" alt="alternative">
-            </div> <!-- end of col -->
-            <div class="col-lg-4">
-                <h2 class="text-info">RIB Protender 440</h2>
-                <hr class="line-heading">
-                <h3 class="text-dark">Nautirent</h3>
-                
-                <p class="testimonial-text text-dark">Esta embarcación semirrígida de 15cv, que puedes conducir sin necesidad de licencia, es ideal para disfrutar de las vistas mientras navegas a tu ritmo.</p>
-                   
-                <h6 class="m-0 text-dark"><span class="text-info">Capacidad: </span>4 personas</h6>
-                    <h6 class="m-0 text-dark"><span class="text-info">Eslora: </span>4,4 metros</h6>
-                    <h6 class="m-0 text-dark"><span class="text-info">Tipo: </span>motor fueraborda, 15cv</h6>
-                    <h6 class="m-0 text-dark"><span class="text-info">Requisito: </span>Sin licencia de navegación</h6>
-                <div class="testimonial-container">
-                     <h3 class="testimonial-author">Desde 200€</h3>
-                </div>
-                <a class="btn-solid-reg" href="#your-link">Reservar</a>
-            </div> <!-- end of col -->
-        </div> <!-- end of row -->
-    </div> <!-- end of lightbox-basic -->
-    <!-- end of lightbox -->
-
-    <!-- Lightbox -->
-    <div id="project-8" class="lightbox-basic zoom-anim-dialog mfp-hide">
-        <div class="row">
-            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-            <div class="col-lg-8">
-                <img class="img-fluid" src="img/carousel-2.jpg" alt="alternative">
-            </div> <!-- end of col -->
-            <div class="col-lg-4">
-                <h2 class="text-info">RIB Protender 440</h2>
-                <hr class="line-heading">
-                <h3 class="text-dark">Nautirent</h3>
-                
-                <p class="testimonial-text text-dark">Esta embarcación semirrígida de 15cv, que puedes conducir sin necesidad de licencia, es ideal para disfrutar de las vistas mientras navegas a tu ritmo.</p>
-                   
-                <h6 class="m-0 text-dark"><span class="text-info">Capacidad: </span>4 personas</h6>
-                    <h6 class="m-0 text-dark"><span class="text-info">Eslora: </span>4,4 metros</h6>
-                    <h6 class="m-0 text-dark"><span class="text-info">Tipo: </span>motor fueraborda, 15cv</h6>
-                    <h6 class="m-0 text-dark"><span class="text-info">Requisito: </span>Sin licencia de navegación</h6>
-                <div class="testimonial-container">
-                     <h3 class="testimonial-author">Desde 200€</h3>
-                </div>
-                <a class="btn-solid-reg" href="#your-link">Reservar</a>
-            </div> <!-- end of col -->
-        </div> <!-- end of row -->
-    </div> <!-- end of lightbox-basic -->
-    <!-- end of lightbox -->
+    </div> <!-- end of container -->
+</div> <!-- end of filter -->
+<!-- end of projects -->
 
 
-
-  <!-- Footer Start -->
-  <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
-    <div class="row pt-5">
-        <div class="col-lg-3 col-md-6 mb-5">
-            <a href="" class="navbar-brand">
-                <div class="logo-footer">         
-                    <img src="img/icon/Logo3.JPG" alt="logo">       
-                </div>
-            </a>
-            <p>Con base en el Club Náutico Santa Ponça, ponemos a tu disposición nuestra embarcación Bayliner VR5, ideal para disfrutar del mar con comodidad, seguridad y estilo.
-            </p>
-            <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Síganos</h6>
-            <div class="d-flex justify-content-start">
-                <a class="btn btn-outline-primary btn-square" href="https://www.instagram.com/nautirentcharters?igsh=aGV0MXc5aDFzZG5r "><i class="fab fa-instagram"></i></a>                
-                <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-youtube"></i></a>
-              
-            </div>
-        </div>
-       <div class="col-lg-3 col-md-6 mb-5">
-            <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Información & Ayuda</h5>
-            <div class="d-flex flex-column justify-content-start">
-                <a class="text-white-50 mb-2" href="contact.html"><i class="fa fa-angle-right mr-2"></i>Contacto</a>
-                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Términos y Condiciones</a>
-                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Quienes Somos</a>
-                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Flota</a>
-                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Travelog</a>
-          
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5">
-            <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Blog & Noticias</h5>
-            <div class="d-flex flex-column justify-content-start">      
-                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Noticias</a>
-                <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Blog</a>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5">
-            <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Dirección</h5>
-            <p><i class="fa fa-map-marker-alt mr-2"></i>Club Nautico Santa Ponça Via de la Creu, 46, 07180 Santa Ponça, Balearic Islands</p>
-            <p><i class="fa fa-phone-alt mr-2"></i>+34 662 352 676</p>
-            <p><i class="fa fa-phone-alt mr-2"></i>+34 673 709 498</p>
-            <p><i class="fa fa-envelope mr-2"></i>Nautirentbalear@gmail.com</p>
-           
-            <div class="w-100">
-                <div class="input-group">
-                   <!--<div class="footer">         
-                        <img src="img/icon/qr_nauti.jpg" alt="logoqr"  href="https://www.instagram.com/nautirentcharters?utm_source=qr&igsh=aGV0MXc5aDFzZG5r">       
-                    </div>--> 
-                </div>
-            </div>
-        </div>
-
-         <!--container-redes-sociales-->
-    <div class="container-redes" id="redes">
-        <a href="https://api.whatsapp.com/send?phone=34662352676&text=¿Cómo son los servicios que ofreces?" target="_blank">
-            <img src="img/icon/icon-whatsapp.png" title="Enviar mensaje de WhatsApp" alt=""> 
-        </a>
-        <!-- <a href="http://m.me/ronald.spinelli.17" target="_blank">
-          <img src="img/icon/icon-messenger.png" alt="" title="Enviar mensaje por Messenger">
-        </a> -->
-    </div>
-
-        <div class="ubicacion">
-                
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6156.216976912184!2d2.463689057475657!3d39.5120410792677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x129789cf65718de9%3A0x7cdb2506b307f6de!2sClub%20Nautico%20Santa%20Pon%C3%A7a!5e0!3m2!1ses!2ses!4v1744240499169!5m2!1ses!2ses" width="2000" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-        </div>
-
-
-    </div>
-</div>
-<div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
+<!-- Project Lightboxes -->
+<!-- Lightbox -->
+<div id="project-1" class="lightbox-basic zoom-anim-dialog mfp-hide">
     <div class="row">
-        <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
-            <p class="m-0 text-white">Copyright &copy; <a href="#">Domain</a>. Todos los derechos reservados.</a>
-            </p>
+        <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+        <div class="col-lg-8">
+            <img class="img-fluid" src="img/carousel-1.jpg" alt="alternative">
+        </div> <!-- end of col -->
+        <div class="col-lg-4">
+            <h2 class="text-info">RIB Protender 440</h2>
+            <hr class="line-heading">
+            <h3 class="text-dark">Nautirent</h3>
+            
+            <p class="testimonial-text text-dark">Esta embarcación semirrígida de 15cv, que puedes conducir sin necesidad de licencia, es ideal para disfrutar de las vistas mientras navegas a tu ritmo.</p>
+               
+            <h6 class="m-0 text-dark"><span class="text-info">Capacidad: </span>4 personas</h6>
+                <h6 class="m-0 text-dark"><span class="text-info">Eslora: </span>4,4 metros</h6>
+                <h6 class="m-0 text-dark"><span class="text-info">Tipo: </span>motor fueraborda, 15cv</h6>
+                <h6 class="m-0 text-dark"><span class="text-info">Requisito: </span>Sin licencia de navegación</h6>
+            <div class="testimonial-container">
+                 <h3 class="testimonial-author">Desde 200€</h3>
+            </div>
+            <a class="btn-solid-reg" href="#your-link">Reservar</a>
+        </div> <!-- end of col -->
+    </div> <!-- end of row -->
+</div> <!-- end of lightbox-basic -->
+<!-- end of lightbox -->
+
+<!-- Lightbox -->
+<div id="project-2" class="lightbox-basic zoom-anim-dialog mfp-hide">
+    <div class="row">
+        <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+        <div class="col-lg-8">
+            <img class="img-fluid" src="img/carousel-1.jpg" alt="alternative">
+        </div> <!-- end of col -->
+        <div class="col-lg-4">
+            <h2 class="text-info">RIB Protender 440</h2>
+            <hr class="line-heading">
+            <h3 class="text-dark">Nautirent</h3>
+            
+            <p class="testimonial-text text-dark">Esta embarcación semirrígida de 15cv, que puedes conducir sin necesidad de licencia, es ideal para disfrutar de las vistas mientras navegas a tu ritmo.</p>
+               
+            <h6 class="m-0 text-dark"><span class="text-info">Capacidad: </span>4 personas</h6>
+                <h6 class="m-0 text-dark"><span class="text-info">Eslora: </span>4,4 metros</h6>
+                <h6 class="m-0 text-dark"><span class="text-info">Tipo: </span>motor fueraborda, 15cv</h6>
+                <h6 class="m-0 text-dark"><span class="text-info">Requisito: </span>Sin licencia de navegación</h6>
+            <div class="testimonial-container">
+                 <h3 class="testimonial-author">Desde 200€</h3>
+            </div>
+            <a class="btn-solid-reg" href="#your-link">Reservar</a>
+        </div> <!-- end of col -->
+    </div> <!-- end of row -->
+</div> <!-- end of lightbox-basic -->
+<!-- end of lightbox -->
+
+<!-- Lightbox -->
+<div id="project-3" class="lightbox-basic zoom-anim-dialog mfp-hide">
+    <div class="row">
+        <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+        <div class="col-lg-8">
+            <img class="img-fluid" src="img/carousel-1.jpg" alt="alternative">
+        </div> <!-- end of col -->
+        <div class="col-lg-4">
+            <h2 class="text-info">RIB Protender 440</h2>
+            <hr class="line-heading">
+            <h3 class="text-dark">Nautirent</h3>
+            
+            <p class="testimonial-text text-dark">Esta embarcación semirrígida de 15cv, que puedes conducir sin necesidad de licencia, es ideal para disfrutar de las vistas mientras navegas a tu ritmo.</p>
+               
+            <h6 class="m-0 text-dark"><span class="text-info">Capacidad: </span>4 personas</h6>
+                <h6 class="m-0 text-dark"><span class="text-info">Eslora: </span>4,4 metros</h6>
+                <h6 class="m-0 text-dark"><span class="text-info">Tipo: </span>motor fueraborda, 15cv</h6>
+                <h6 class="m-0 text-dark"><span class="text-info">Requisito: </span>Sin licencia de navegación</h6>
+            <div class="testimonial-container">
+                 <h3 class="testimonial-author">Desde 200€</h3>
+            </div>
+            <a class="btn-solid-reg" href="#your-link">Reservar</a>
+        </div> <!-- end of col -->
+    </div> <!-- end of row -->
+</div> <!-- end of lightbox-basic -->
+<!-- end of lightbox -->
+
+<!-- Lightbox -->
+<div id="project-4" class="lightbox-basic zoom-anim-dialog mfp-hide">
+    <div class="row">
+        <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+        <div class="col-lg-8">
+            <img class="img-fluid" src="img/carousel-1.jpg" alt="alternative">
+        </div> <!-- end of col -->
+        <div class="col-lg-4">
+            <h2 class="text-info">RIB Protender 440</h2>
+            <hr class="line-heading">
+            <h3 class="text-dark">Nautirent</h3>
+            
+            <p class="testimonial-text text-dark">Esta embarcación semirrígida de 15cv, que puedes conducir sin necesidad de licencia, es ideal para disfrutar de las vistas mientras navegas a tu ritmo.</p>
+               
+            <h6 class="m-0 text-dark"><span class="text-info">Capacidad: </span>4 personas</h6>
+                <h6 class="m-0 text-dark"><span class="text-info">Eslora: </span>4,4 metros</h6>
+                <h6 class="m-0 text-dark"><span class="text-info">Tipo: </span>motor fueraborda, 15cv</h6>
+                <h6 class="m-0 text-dark"><span class="text-info">Requisito: </span>Sin licencia de navegación</h6>
+            <div class="testimonial-container">
+                 <h3 class="testimonial-author">Desde 200€</h3>
+            </div>
+            <a class="btn-solid-reg" href="#your-link">Reservar</a>
+        </div> <!-- end of col -->
+    </div> <!-- end of row -->
+</div> <!-- end of lightbox-basic -->
+<!-- end of lightbox -->
+
+
+
+   
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
+        <div class="row pt-5">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <a href="" class="navbar-brand">
+                    <div class="logo-footer">         
+                        <img src="img/icon/Logo3.JPG" alt="logo">       
+                    </div>
+                </a>
+                <p>Con base en el Club Náutico Santa Ponça, ponemos a tu disposición nuestra embarcación Bayliner VR5, ideal para disfrutar del mar con comodidad, seguridad y estilo.
+                </p>
+                <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Síganos</h6>
+                <div class="d-flex justify-content-start">
+                    <a class="btn btn-outline-primary btn-square" href="https://www.instagram.com/nautirentcharters?igsh=aGV0MXc5aDFzZG5r "><i class="fab fa-instagram"></i></a>                
+                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-youtube"></i></a>
+                  
+                </div>
+            </div>
+           <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Información & Ayuda</h5>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-white-50 mb-2" href="contact.html"><i class="fa fa-angle-right mr-2"></i>Contacto</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Términos y Condiciones</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Quienes Somos</a>
+                    <a class="text-white-50 mb-2" href="flota.html"><i class="fa fa-angle-right mr-2"></i>Flota</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Travelog</a>
+              
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Blog & Noticias</h5>
+                <div class="d-flex flex-column justify-content-start">      
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Noticias</a>
+                    <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Blog</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Dirección</h5>
+                <p><i class="fa fa-map-marker-alt mr-2"></i>Club Nautico Santa Ponça Via de la Creu, 46, 07180 Santa Ponça, Balearic Islands</p>
+                <p><i class="fa fa-phone-alt mr-2"></i>+34 662 352 676</p>
+                <p><i class="fa fa-phone-alt mr-2"></i>+34 673 709 498</p>
+                <p><i class="fa fa-envelope mr-2"></i>Nautirentbalear@gmail.com</p>
+               
+                <div class="w-100">
+                    <div class="input-group">
+                       <!--<div class="footer">         
+                            <img src="img/icon/qr_nauti.jpg" alt="logoqr"  href="https://www.instagram.com/nautirentcharters?utm_source=qr&igsh=aGV0MXc5aDFzZG5r">       
+                        </div>--> 
+                    </div>
+                </div>
+            </div>
+
+             <!--container-redes-sociales-->
+        <div class="container-redes" id="redes">
+            <a href="https://api.whatsapp.com/send?phone=34662352676&text=¿Cómo son los servicios que ofreces?" target="_blank">
+                <img src="img/icon/icon-whatsapp.png" title="Enviar mensaje de WhatsApp" alt=""> 
+            </a>
+            <!-- <a href="http://m.me/ronald.spinelli.17" target="_blank">
+              <img src="img/icon/icon-messenger.png" alt="" title="Enviar mensaje por Messenger">
+            </a> -->
         </div>
-        <div class="col-lg-6 text-center text-md-right">
-            <p class="m-0 text-white">Diseñado por <a href="">Ronald Contreras</a>
-            </p>
+
+            <div class="ubicacion">
+                    
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6156.216976912184!2d2.463689057475657!3d39.5120410792677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x129789cf65718de9%3A0x7cdb2506b307f6de!2sClub%20Nautico%20Santa%20Pon%C3%A7a!5e0!3m2!1ses!2ses!4v1744240499169!5m2!1ses!2ses" width="2000" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+
+
         </div>
     </div>
-</div>
-<!-- Footer End -->
+    <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
+        <div class="row">
+            <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
+                <p class="m-0 text-white">Copyright &copy; <a href="#">Domain</a>. Todos los derechos reservados.</a>
+                </p>
+            </div>
+            <div class="col-lg-6 text-center text-md-right">
+                <p class="m-0 text-white">Diseñado por <a href="">Ronald Contreras</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
 
 
-<!-- Back to Top -->
-<a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
 
-<!-- JavaScript Libraries -->
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-<script src="lib/easing/easing.min.js"></script>
-<script src="lib/owlcarousel/owl.carousel.min.js"></script>
-<script src="lib/tempusdominus/js/moment.min.js"></script>
-<script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
-<script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
-<!-- Contact Javascript File -->
-<script src="mail/jqBootstrapValidation.min.js"></script>
-<script src="mail/contact.js"></script>
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
 
-<!-- Template Javascript -->
-<script src="js/main.js"></script>
-
-
-  <!-- Scripts -->
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <!-- Scripts -->
   <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
   <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
   <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
@@ -517,7 +378,7 @@
   <script src="js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
   <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
   <script src="js/scripts.js"></script> <!-- Custom scripts -->
-</body>
+    
 </body>
 
 </html>
