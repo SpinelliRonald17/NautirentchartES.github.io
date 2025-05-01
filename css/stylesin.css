@@ -46,17 +46,7 @@ Colors:
 /******************************/
 /*     01. General Styles     */
 /******************************/
-body,
-html {
-    width: 100%;
-	height: 100%;
-	overflow-x: hidden;
-}
 
-body, p {
-	color: floralwhite; 
-	font: 400 1rem/1.5625rem "Open Sans", sans-serif;
-}
 
 .p-large {
 	font: 400 1.125rem/1.625rem "Open Sans", sans-serif;
@@ -79,54 +69,7 @@ body, p {
 	padding-left: 1.25rem;
 }
 
-h1 {
-	color: #484a46;
-	font: 700 2.5rem/3rem "Montserrat", sans-serif;
-}
 
-h2 {
-	color: #484a46;
-	font: 700 1.75rem/2.125rem "Montserrat", sans-serif;
-}
-
-h3 {
-	color: #484a46;
-	font: 700 1.375rem/1.75rem "Montserrat", sans-serif;
-}
-
-h4 {
-	color: #484a46;
-	font: 700 1.25rem/1.625rem "Montserrat", sans-serif;
-}
-
-h5 {
-	color: #484a46;
-	font: 700 1.125rem/1.5rem "Montserrat", sans-serif;
-}
-
-h6 {
-	color: #484a46;
-	font: 700 1rem/1.375rem "Montserrat", sans-serif;
-}
-
-a {
-	color: #787976;
-	text-decoration: none;
-}
-
-a:hover {
-	color: #787976;
-	text-decoration: none;
-}
-
-a.green {
-	color: #14bf98;
-}
-
-a.white,
-.white {
-	color: #dfe5ec;
-}
 
 .testimonial-text {
 	font-style: italic;
@@ -141,7 +84,7 @@ strong {
 }
 
 .section-title {
-	color: #14bf98;
+	color: #17a2b8;
 	font: 500 0.8125rem/1.125rem "Montserrat", sans-serif;
 }
 
@@ -159,16 +102,16 @@ strong {
 
 .btn-solid-reg:hover {
 	background-color: transparent;
-	color: #14bf98;
+	color: #17a2b8;;
 	text-decoration: none;
 }
 
 .btn-solid-lg {
 	display: inline-block;
 	padding: 1.375rem 2.125rem 1.375rem 2.125rem;
-	border: 0.125rem solid #14bf98;
+	border: 0.125rem solid #17a2b8;
 	border-radius: 0.25rem;
-	background-color: #14bf98;
+	background-color: filters-button-group;
 	color: #fff;
 	font: 700 0.75rem/0 "Montserrat", sans-serif;
 	text-decoration: none;
@@ -177,7 +120,7 @@ strong {
 
 .btn-solid-lg:hover {
 	background-color: transparent;
-	color: #14bf98;
+	color: #669928;
 	text-decoration: none;
 }
 
@@ -381,7 +324,7 @@ input[type='checkbox'] {
 	height: 3.125rem;
 	border: 0.125rem solid #14bf98;
 	border-radius: 0.25rem;
-	background-color: #14bf98;
+	background-color: #669928;
 	color: #fff;
 	font: 700 0.75rem/1.75rem "Montserrat", sans-serif;
 	cursor: pointer;
@@ -390,7 +333,7 @@ input[type='checkbox'] {
 
 .form-control-submit-button:hover {
 	background-color: transparent;
-	color: #14bf98;
+	color: #669928;
 }
 
 /* Form Success And Error Message Formatting */
@@ -685,7 +628,7 @@ input[type='checkbox'] {
 
 .navbar-custom .nav-item .nav-link:hover,
 .navbar-custom .nav-item .nav-link.active {
-	color: #14bf98;
+	color: #669928;
 }
 
 /* Dropdown Menu */
@@ -775,7 +718,7 @@ input[type='checkbox'] {
 /*    04. Header     */
 /*********************/
 .header {
-	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('../images/header-background.jpg') center center no-repeat;
+	background: #17a2b8;
 	background-size: cover;
 }
 
@@ -1351,12 +1294,13 @@ input[type='checkbox'] {
 }
 
 .filter .button-group a:hover {
-	background-color: #14bf98;
+	background-color: #669928;
 	color: #fff;
+	text-decoration: none;
 }
 
 .filter .button-group a.button.is-checked {
-	background-color: #14bf98;
+	background-color:#17a2b8;
 	color: #fff;
 }
 
@@ -1861,7 +1805,7 @@ a:hover.back-to-top {
 	.navbar-custom {
 		padding: 2.125rem 1.5rem 2.125rem 2rem;
 		box-shadow: none;
-        background: transparent;
+        background: #fff;
 	}
 	
 	.navbar-custom .navbar-brand.logo-text {
