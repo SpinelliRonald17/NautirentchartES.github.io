@@ -343,7 +343,7 @@
 
     /* Back To Top Button */
     // create the back to top button
-    $('body').prepend('<a href="body" class="back-to-top page-scroll">Back to Top</a>');
+   /* $('body').prepend('<a href="body" class="back-to-top page-scroll">Back to Top</a>');
     var amountScrolled = 700;
     $(window).scroll(function() {
         if ($(window).scrollTop() > amountScrolled) {
@@ -351,7 +351,7 @@
         } else {
             $('a.back-to-top').fadeOut('500');
         }
-    });
+    });*/
 
 
 	/* Removes Long Focus On Buttons */
